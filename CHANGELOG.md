@@ -27,16 +27,18 @@ The following changes have been completed, and will be included in the next tagg
 
 - Coding Review Guidelines
   - initial text
-- Types
-  - Added 2.6.1
-  - Added 2.6.2
+- Documentation
   - Added 3.1.1
   - Added 3.1.2
   - Added 3.1.3
   - Added 3.1.4
   - Added 3.1.5
   - Added 3.1.6
+- Naming Conventions
   - Added 3.3.1
+- Types
+  - Added 2.6.1
+  - Added 2.6.2
   - Added 3.6.1
 
 ### Fixes
