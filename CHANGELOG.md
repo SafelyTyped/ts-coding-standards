@@ -27,6 +27,8 @@ The following changes have been completed, and will be included in the next tagg
 
 - Coding Review Guidelines
   - initial text
+- Types
+  - Added 2.6.1
 
 ### Fixes
 
