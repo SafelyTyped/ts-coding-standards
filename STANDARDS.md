@@ -34,13 +34,16 @@ Minor | These are consistency / stylistic / philosophical points.
 
 To make it easier to find things, we've broken up the coding standards into these groups:
 
-Category           | Description
--------------------|------------
-Documentation      |
-Errors             |
-Naming Conventions |
-Package Management |
-Unit Tests         |
+Category           | ID  | Description
+-------------------|-----|------
+Documentation      | .1. |
+Errors             | .2. |
+Functions          | .8. |
+Naming Conventions | .3. |
+Package Management | .4. |
+Types              | .6. |
+Type Guards        | .7. |
+Unit Tests         | .5. |
 
 ## Impacted Areas
 
@@ -59,18 +62,45 @@ Area                | Impact
 
 ## Key Criteria
 
-Priority | ID | Category | Criteria | Impacts | Description
----------|----|----------|----------|---------|------------
+Priority | ID | Category | Criteria | Impacts
+---------|----|----------|----------|--------
 
 ## Major Criteria
 
-Priority | ID | Category | Criteria | Impacts | Description
----------|----|----------|----------|---------|------------
+Priority | ID | Category | Criteria | Impacts
+---------|----|----------|----------|--------
+Major | [2.3.1][2.3.1] | Naming Conventions | All functions and methods that return a function must be called `buildXXX()`. | [Adoption][ADOPTION]
+Major | [2.3.2][2.3.2] | Naming Conventions | All smart constructors must be prefixed with `makeXXX()`. | [Adoption][ADOPTION]
+Major | [2.3.3][2.3.3] | Naming Conventions | All type guards must be prefixed with `isXXX()`. | [Adoption][ADOPTION]
+Major | [2.3.4][2.3.4] | Naming Conventions | All type guarantees must be prefixed with `mustBeXXX()`. | [Adoption][ADOPTION]
+Major | [2.6.1][2.6.1] | Types | All base classes must have a `protected` constructor. | [Robustness][ROBUSTNESS], [Project Maintenance][PROJECT-MAINTENANCE]
+Major | [2.6.2][2.6.2] | Types | All generic types must provide an `AnyXXX` type. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS]
+Major | [2.7.1][2.7.1] | Type Guards | Type guards must not accept the `any` type. Use `unknown` instead. | [Robustness][ROBUSTNESS]
+Major | [2.8.1][2.8.1] | Functions | All function signatures must follow the same pattern. | [Adoption][ADOPTION], [Correctness][CORRECTNESS], [Robustness][ROBUSTNESS], [Testability][TESTABILITY]
+Major | [2.8.2][2.8.2] | Functions | Functions should use dependency injection. | [Adoption][ADOPTION], [Testability][TESTABILITY]
+Major | [2.8.3][2.8.3] | Functions | Every mandatory dependency must be a named function parameter. | [Correctness][CORRECTNESS]
+Major | [2.8.4][2.8.4] | Functions | Every user-supplied input must be a named parameter. | [Adoption][ADOPTION], [Correctness][CORRECTNESS]
+Major | [2.8.5][2.8.5] | Functions | Avoid optional user-supplied inputs. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE], [Testability][TESTABILITY]
+Major | [2.8.6][2.8.6] | Functions | User-supplied options must be a single options parameter. | [Project Maintenance][PROJECT-MAINTENANCE]
+Major | [2.8.7][2.8.7] | Functions | Every property of the _user-supplied options_ parameter must be optional. | [Project Maintenance][PROJECT-MAINTENANCE]
+Major | [2.8.8][2.8.8] | Functions | Ever user-supplied option must have a default value. | [Adoption][ADOPTION], [Testability][TESTABILITY]
+Major | [2.8.9][2.8.9] | Functions | Functional options must be captured as a rest parameter. | [Adoption][ADOPTION]
 
 ## Minor Criteria
 
-Priority | ID | Category | Criteria | Impacts | Description
----------|----|----------|----------|---------|------------
+Priority | ID | Category | Criteria | Impacts
+---------|-------|---------------|---------------------------------|--------
+Minor    | [3.1.1][3.1.1] | Documentation | Every exported item must have a docblock. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.1.2][3.1.2] | Documentation | Docblocks must begin with the name of the item they document. | [Adoption][ADOPTION]
+Minor | [3.1.3][3.1.3] | Documentation | Docblocks must use whole sentences. | [Adoption][ADOPTION]
+Minor | [3.1.4][3.1.4] | Documentation | Docblocks must use Typedoc tags. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.1.5][3.1.5] | Documentation | Write docblocks for overridden methods. | [Adoption][ADOPTION]
+Minor | [3.1.6][3.1.6] | Documentation | Write docblocks for methods inherited from interfaces. | [Adoption][ADOPTION]
+Minor | [3.3.1] | Naming Conventions | Every function or method must start with `<verb><noun>`. | [Adoption][ADOPTION]
+Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
+Minor | [3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
+Minor | [3.8.1][3.8.1] | Functions | Create a type for your function's user-supplied options. | [Adoption][ADOPTION]
+Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dependencies. | [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Testability][TESTABILITY]
 
 [ADOPTION]: ./impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ./impacted-areas/CONTRIBUTIONS.md
@@ -80,3 +110,31 @@ Priority | ID | Category | Criteria | Impacts | Description
 [ROBUSTNESS]: impacted-areas/ROBUSTNESS.md
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
+[2.3.1]: ./categories/naming-conventions/2.3.1.md
+[2.3.2]: ./categories/naming-conventions/2.3.2.md
+[2.3.3]: ./categories/naming-conventions/2.3.3.md
+[2.3.4]: ./categories/naming-conventions/2.3.4.md
+[2.6.1]: ./categories/types/2.6.1.md
+[2.6.2]: ./categories/types/2.6.2.md
+[2.7.1]: ./categories/type-guards/2.7.1.md
+[2.8.1]: ./categories/functions/2.8.1.md
+[2.8.2]: ./categories/functions/2.8.2.md
+[2.8.3]: ./categories/functions/2.8.3.md
+[2.8.4]: ./categories/functions/2.8.4.md
+[2.8.5]: ./categories/functions/2.8.5.md
+[2.8.6]: ./categories/functions/2.8.6.md
+[2.8.7]: ./categories/functions/2.8.7.md
+[2.8.8]: ./categories/functions/2.8.8.md
+[2.8.9]: ./categories/functions/2.8.9.md
+[2.8.10]: ./categories/functions/2.8.10.md
+[3.1.1]: ./categories/documentation/3.1.1.md
+[3.1.2]: ./categories/documentation/3.1.2.md
+[3.1.3]: ./categories/documentation/3.1.3.md
+[3.1.4]: ./categories/documentation/3.1.4.md
+[3.1.5]: ./categories/documentation/3.1.5.md
+[3.1.6]: ./categories/documentation/3.1.6.md
+[3.3.1]: ./categories/naming-conventions/3.3.1.md
+[3.6.1]: ./categories/types/3.6.1.md
+[3.7.1]: ./categories/type-guards/3.7.1.md
+[3.8.1]: ./categories/functions/3.8.1.md
+[3.8.2]: ./categories/functions/3.8.2.md
