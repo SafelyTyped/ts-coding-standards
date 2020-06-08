@@ -32,6 +32,7 @@ The following changes have been completed, and will be included in the next tagg
   - Added 2.6.2
   - Added 3.1.1
   - Added 3.1.2
+  - Added 3.1.3
   - Added 3.6.1
 
 ### Fixes
