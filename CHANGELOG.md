@@ -36,6 +36,7 @@ The following changes have been completed, and will be included in the next tagg
   - Added 3.1.6
 - Functions
   - Added 2.8.1
+  - Added 2.8.2
 - Naming Conventions
   - Added 2.3.1
   - Added 2.3.2
