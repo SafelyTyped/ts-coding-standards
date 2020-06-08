@@ -36,6 +36,7 @@ The following changes have been completed, and will be included in the next tagg
   - Added 3.1.4
   - Added 3.1.5
   - Added 3.1.6
+  - Added 3.3.1
   - Added 3.6.1
 
 ### Fixes
