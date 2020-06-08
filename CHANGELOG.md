@@ -42,6 +42,7 @@ The following changes have been completed, and will be included in the next tagg
   - Added 2.8.5
   - Added 2.8.6
   - Added 2.8.7
+  - Added 2.8.8
 - Naming Conventions
   - Added 2.3.1
   - Added 2.3.2
