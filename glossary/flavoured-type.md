@@ -1,29 +1,22 @@
-# GLOSSARY
+# Flavoured Type
 
-## Introduction
+A _flavoured type_ is a variation on [branded types][Branded Type].
 
-Here's a list of all the jargon that we use in our coding standards.
+```typescript
+type WeakUuid = string & {
+    _type?: "@safelytyped/uuid";
+}
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+type WeakCombUid = string & {
+    _type?: "@safelytyped/combuid";
+}
+```
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
+The difference between _branded types_ and _flavoured types_ is that _flavoured types_ make the `_type` property **optional**.
+
+Why do we do that? Isn't it much less [robust][ROBUSTNESS]?
+
+They were invented to help with unmarshalling data from a database or equivalent. See [this blog post](https://spin.atomicobject.com/2018/01/15/typescript-flexible-nominal-typing/) for more details.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

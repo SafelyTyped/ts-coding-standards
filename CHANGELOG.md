@@ -77,6 +77,7 @@ The following changes have been completed, and will be included in the next tagg
   - added End-User
   - added Entity
   - added Exported Item
+  - added Flavoured Type
   - added Value Object
 
 ### Fixes

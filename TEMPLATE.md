@@ -37,5 +37,6 @@ Table of Contents:
 [End-User]: ../../glossary/end-user.md
 [Entity]: ../../glossary/entity.md
 [Exported Item]: ../../glossary/exported-item.md
+[Flavoured Type]: ../../glossary/flavoured-type.md
 [Value Object]: ../../glossary/value-object.md
 
