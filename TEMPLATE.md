@@ -52,5 +52,5 @@ Table of Contents:
 [Nominal Typing]: ../../glossary/nominal-typing.md
 [Optional Input]: ../../glossary/optional-input.md
 [Overridden Method]: ../../glossary/overridden-method.md
+[Plain Object]: ../../glossary/plain-object.md
 [Value Object]: ../../glossary/value-object.md
-
