@@ -23,4 +23,5 @@ Table of Contents:
 [SECURITY]: ../../impacted-areas/SECURITY.md
 [TESTABILITY]: ../../impacted-areas/TESTABILITY.md
 [Base Class]: ../../glossary/base-class.md
+[Branded Type]: ../../glossary/branded-type.md
 [Value Object]: ../../glossary/value-object.md

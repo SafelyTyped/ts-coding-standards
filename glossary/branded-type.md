@@ -1,16 +1,28 @@
-# GLOSSARY
+# Branded Type
 
-## Introduction
+A _branded type_ is a type that contains an additional property to give it a unique identity.
 
-Here's a list of all the jargon that we use in our coding standards.
+```typescript
+type Uuid = string & {
+    _type: "@safelytyped/uuid";
+}
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+type CombUid = string & {
+    _type: "@safelytyped/combuid";
+}
+```
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
+In this example, we've added an `interface` to a `string` to create two different types: `Uuid` and `CombUid`.
 
+The `interface` contains the property `_type`, whose _type_ is `@safelytyped/uuid` or `@safelytyped/combuid`. (They looks like values, but they're not.)
+
+These `_type` properties are part of the structure of `Uuid` and `CombUid`. They make each structure unique. The compiler will now treat `Uuid` and `CombUid` as different types. Without the `_type` property, the compiler would treat them as the same type. This is called [structural typing][Structural Typing].
+
+Because interfaces only exist at compile-time, our example `Uuid` and `CombUid` types both turn into `string` once the code is compiled. The interface disappears, and has zero runtime overhead.
+
+You can add these interfaces to any Typescript type - including classes! - to emulate [nominal typing][Nominal Typing].
+
+See also [flavoured types][Flavoured Type] for an alternative.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
