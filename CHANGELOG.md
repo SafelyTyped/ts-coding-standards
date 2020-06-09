@@ -90,6 +90,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Mandatory Dependency
   - added No-Op
   - added Nominal Typing
+  - added Optional Input
   - added Value Object
 
 ### Fixes
