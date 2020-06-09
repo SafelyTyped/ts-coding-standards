@@ -1,6 +1,39 @@
 # Dependency Injection
 
-TBD.
+_Dependency injection_ is a programming technique.
+
+Instead of [hard-coding][Hard-Coded] the list of functions you call, you get the functions as input parameters. The [caller][Caller] is responsible for making sure you have the functions you need.
+
+We call these functions [dependencies][Dependency].
+
+```typescript
+// without dependency injection
+//
+// `logger` and `dbConn` in this case are probably
+// global variables
+function queryDatabase(sql: string): unknown {
+    logger.logInfo("querying database: " + sql);
+    return dbConn.query(sql);
+}
+```
+
+```typescript
+// with dependency injection
+//
+// `logger` and `dbConn` are given to you
+// `Logger` and `DatabaseConnection` are
+// *interfaces* and not class names
+function queryDatabase(
+    logger: Logger,
+    dbConn: DatabaseConnection,
+    sql: string
+): unknown {
+    logger.logInfo("querying database: " + sql);
+    return dbConn.query(sql);
+}
+```
+
+_Dependency injection_ is often mistaken for the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) from [the SOLID principles](https://en.wikipedia.org/wiki/SOLID). It belongs to the [Inversion of Control (IoC)](https://en.wikipedia.org/wiki/Inversion_of_control) programming principle instead.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
