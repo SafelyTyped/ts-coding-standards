@@ -1,38 +1,44 @@
-# GLOSSARY
+# Instantiable Type
 
-## Introduction
+An _instantiable type_ is a type that the [end-user](#end-user) can create objects from. This includes:
 
-Here's a list of all the jargon that we use in our coding standards.
+* all [branded](#branded-type) and[flavoured](#flavoured-type) types
+* all classes that aren't [base classes](#base-class)
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+For example:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
+For example:
+
+```typescript
+// `ValueObject` is a base class.
+class ValueObject<T> {
+    protected value T;
+
+    protected constructor(input: T) {
+        this.value = T;
+    }
+
+    public valueOf(): T {
+        return this.value;
+    }
+}
+
+// the end-user can't create new objects of type `ValueObject`
+// they cannot instantiate this type
+const myValue1 = new ValueObject("not allowed!");
+
+// `MediaType` is a child class
+class MediaType extends ValueObject<string> {
+    public constructor(input: string) {
+        mustBeMediaTypeData(input);
+        super(input);
+    }
+}
+
+// the end-user can create new objects of type `MediaType`
+// they CAN instantiate this type
+const myValue2 = new MediaType("text/html; charset=UTF-8");
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -62,13 +68,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md

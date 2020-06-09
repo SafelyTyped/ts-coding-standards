@@ -46,5 +46,6 @@ Table of Contents:
 [Identity Type]: ../../glossary/identity-type.md
 [Immutability]: ../../glossary/immutability.md
 [Inherited Method]: ../../glossary/inherited-method.md
+[Instantiable Type]: ../../glossary/instantiable-type.md
 [Value Object]: ../../glossary/value-object.md
 
