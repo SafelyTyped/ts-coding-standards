@@ -64,6 +64,7 @@ Area                | Impact
 
 Priority | ID | Category | Criteria | Impacts
 ---------|----|----------|----------|--------
+Key | [1.6.1][1.6.1] | Types | All instantiable types must have a smart constructor. | [Robustness][ROBUSTNESS]
 
 ## Major Criteria
 
@@ -110,6 +111,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [ROBUSTNESS]: impacted-areas/ROBUSTNESS.md
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
+[1.6.1]: ./categories/types/1.6.1.md
 [2.3.1]: ./categories/naming-conventions/2.3.1.md
 [2.3.2]: ./categories/naming-conventions/2.3.2.md
 [2.3.3]: ./categories/naming-conventions/2.3.3.md
