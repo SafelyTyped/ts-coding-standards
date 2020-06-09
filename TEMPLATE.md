@@ -43,5 +43,6 @@ Table of Contents:
 [Hard-Coded]: ../../glossary/hard-coded.md
 [Identity]: ../../glossary/identity.md
 [Identity Function]: ../../glossary/identity-function.md
+[Identity Type]: ../../glossary/identity-type.md
 [Value Object]: ../../glossary/value-object.md
 

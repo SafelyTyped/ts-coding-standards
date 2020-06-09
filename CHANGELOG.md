@@ -83,6 +83,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Hard-Coded
   - added Identity
   - added Identity Function
+  - added Identity Type
   - added Value Object
 
 ### Fixes
