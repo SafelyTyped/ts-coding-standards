@@ -53,6 +53,7 @@ The following changes have been completed, and will be included in the next tagg
   - Added 3.3.1
 - Types
   - Added 1.6.1
+  - Added 1.6.2
   - Added 2.6.1
   - Added 2.6.2
   - Added 3.6.1
