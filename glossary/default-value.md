@@ -1,6 +1,25 @@
 # Default Value
 
-TBD
+A _default value_ is the value that's assigned to a function parameter if the [caller][Caller] does not pass in that parameter.
+
+For example:
+
+```typescript
+function doSomething(
+    input: any,
+    { onError = THROW_THE_ERROR }: OnErrorOptions = {}
+) { ... }
+
+// when we do this, `onError` uses the default value
+// of `THROW_THE_ERROR`
+doSomething(input);
+
+// when we do this, `onError` uses our arrow function
+// instead of the default value
+doSomething(input, { onError: (e) => { logger.logError(e); throw e; }});
+```
+
+Not every programming language supports _default values_. Golang is a noteable language that does not.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
