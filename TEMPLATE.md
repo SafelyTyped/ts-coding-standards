@@ -69,4 +69,5 @@ Table of Contents:
 [Type Inference]: ../../glossary/type-inference.md
 [Type Predicate]: ../../glossary/type-predicate.md
 [Type Signature]: ../../glossary/type-signature.md
+[User-Supplied Functional Options]: ../../glossary/user-supplied-functional-options.md
 [Value Object]: ../../glossary/value-object.md
