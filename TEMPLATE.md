@@ -57,4 +57,5 @@ Table of Contents:
 [Primitive Type]: ../../glossary/primitive-type.md
 [Protocol]: ../../glossary/protocol.md
 [Refined Type]: ../../glossary/refined-type.md
+[Rest Parameter]: ../../glossary/rest-parameter.md
 [Value Object]: ../../glossary/value-object.md

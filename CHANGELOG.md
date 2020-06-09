@@ -97,6 +97,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Primitive Type
   - added Protocol
   - added Refined Type
+  - added Rest Parameter
   - added Value Object
 
 ### Fixes
