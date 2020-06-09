@@ -1,57 +1,21 @@
-# GLOSSARY
+# Type Guard
 
-## Introduction
+A _type guard_ is a function that returns a [type predicate][Type Predicate]. _Type guards_ are a type of [data guard][Data Guard].
 
-Here's a list of all the jargon that we use in our coding standards.
+We use them in Typescript code to tell the compiler which operations are safe to perform on any piece of data of indeterminate type.
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+function isValue<T = any>(
+    input: unknown
+): input is Value<T> {
+    return ((input as Value).implementsValue
+        && (input as Value).implementsValue());
+}
+```
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
-- [Type Alias][Type Alias]
-- [Type Casting][Type Casting]
-- [Type Guarantee][Type Guarantee]
-- [Type Guard][Type Guard]
+End-users rely on correctly-functioning _type guards_ to avoid using Typescript's `as XXX` [type casting][Type Casting] in their code.
+
+It's almost impossible to write a type-safe library or application without creating _type guards_.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -81,13 +45,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md

@@ -65,4 +65,5 @@ Table of Contents:
 [Type Alias]: ../../glossary/type-alias.md
 [Type Casting]: ../../glossary/type-casting.md
 [Type Guarantee]: ../../glossary/type-guarantee.md
+[Type Guard]: ../../glossary/type-guard.md
 [Value Object]: ../../glossary/value-object.md
