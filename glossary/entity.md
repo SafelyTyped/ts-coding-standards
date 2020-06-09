@@ -1,6 +1,17 @@
 # Entity
 
-TBD.
+An _entity_ is a data structure that has [identity][Identity].
+
+What do we mean by that? It's all to do with how we determine if two pieces of data are the same (aka the _equality operator_).
+
+* Two [values][Value] are the same if all the data in both values are identical.
+* Two [entities][Entity] are the same if their [identities][Identity] are identical.
+
+For example, a database record that has a _primary key_ is an _entity_. The _primary key_ is its identity.
+
+We say that two database records are the same if they have the same _primary key_. We don't even bother checking the other fields in the record to see if they are the same or not!
+
+Entities are normally not [immutable][Immutability].
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
