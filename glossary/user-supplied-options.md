@@ -1,63 +1,34 @@
-# GLOSSARY
+# User-Supplied Options
 
-## Introduction
+_User-supplied options_ is an object containing [optional dependencies][User-Supplied Optional Dependencies]. It may also contain optional values, but this is strongly discouraged.
 
-Here's a list of all the jargon that we use in our coding standards.
+It is passed into your function as a parameter.
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+For example:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
-- [Type Alias][Type Alias]
-- [Type Casting][Type Casting]
-- [Type Guarantee][Type Guarantee]
-- [Type Guard][Type Guard]
-- [Type Inference][Type Inference]
-- [Type Predicate][Type Predicate]
-- [Type Signature][Type Signature]
-- [User-Supplied Functional Options][User-Supplied Functional Options]
-- [User-Supplied Input][User-Supplied Input]
-- [User-Supplied Options][User-Supplied Options]
+```typescript
+function doSomething(
+    input: any,
+    // this deconstructed object is the user-supplied options
+    { onError = THROW_THE_ERROR } = OnErrorOptions = {}
+) {
+    if (!somethingWorked(input)) {
+        throw onError(new SomethingWentWrong());
+    }
+}
+
+// we can call it like this
+doSomething(input);
+
+// or we can call it like this
+doSomething(input, { onError: (x) => { logger.logError(x); throw x; });
+```
+
+Everything in the _user-supplied options_ object is optional.
+
+* Functions that accept _user-supplied options_ have to provide [default values][Default Value] for every option they accept.
+* [End-users][End-User] can leave out any options they wish.
+* [End-users][End-User] can leave out the options object entirely.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -87,13 +58,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
