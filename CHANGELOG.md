@@ -84,6 +84,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Identity
   - added Identity Function
   - added Identity Type
+  - added Immutability
   - added Value Object
 
 ### Fixes

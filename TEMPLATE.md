@@ -44,5 +44,6 @@ Table of Contents:
 [Identity]: ../../glossary/identity.md
 [Identity Function]: ../../glossary/identity-function.md
 [Identity Type]: ../../glossary/identity-type.md
+[Immutability]: ../../glossary/immutability.md
 [Value Object]: ../../glossary/value-object.md
 

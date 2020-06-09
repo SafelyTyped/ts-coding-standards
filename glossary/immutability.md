@@ -1,36 +1,13 @@
-# GLOSSARY
+# Immutability
 
-## Introduction
+A piece of data is _immutable_ if it cannot be modified after it has been created.
 
-Here's a list of all the jargon that we use in our coding standards.
+This is some important consequences:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+* It reduces [side effects][side-effects] in your code.
+* To modify a piece of data, you have to create a copy of that data.
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
+Immutable data is a common concept in functional programming languages.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -60,13 +37,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
