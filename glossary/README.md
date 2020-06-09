@@ -115,7 +115,6 @@ Table of Contents:
 [Type Guard]: ./type-guard.md
 [Type Inference]: ./type-inference.md
 [Type Predicate]: ./type-predicate.md
-[Type Signature]: ./type-signature.md
 [User-Supplied Functional Options]: ./user-supplied-functional-options.md
 [User-Supplied Input]: ./user-supplied-input.md
 [User-Supplied Options]: ./user-supplied-options.md
