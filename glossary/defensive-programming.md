@@ -1,6 +1,32 @@
 # Defensive Programming
 
-TBD
+_Defensive programming_ is a programming technique designed to make your code more [robust][ROBUSTNESS].
+
+* Inputs are treated as untrusted data. They are validated before they are used.
+* Outputs are treated as incorrect data. They are validated before they are returned to the [caller][Caller].
+
+Traditionally, this was done inside every single function in a library or application:
+
+* Every input was validated.
+* Every output was validated.
+
+The idea was to prevent unexpected / unsafe data from reaching the function's logic, and to prevent "bad" (as in incorrect values or even the wrong data type) from propagating to other functions (where they could corrupt databases, cause security holes, and crash the app).
+
+In languages with limited and/or unenforced type systems, _defensive programming_ was really the only technique available to create robust code.
+
+Unfortunately, while the concept works, it's really really expensive:
+
+* Someone has to write every single line of input validation code. That eats up a lot of time.
+* This has to be done everywhere. If it isn't, you end up with paths through the code that may be unsafe / insecure (known as _planetary alignment_).
+* All this code has to be executed by the CPU. That's expensive, especially because the same piece of data would end up being verified and re-verified multiple times.
+* Someone has to write tests for every single line of input validation code too. Untested validation code is almost as unsafe as having no validation code at all.
+* It's currently impossible to perform static analysis on defensive code to prove that everything is safe.
+
+That's why Stuart says, "Zero defect code is perfectly possible; you just can't afford what it costs to create it".
+
+The reality is that many programmers (and projects as a whole) do not add defensive programming to their code. And the ones that do, almost never succeed in adding it to 100% of the code base.
+
+The [Safely Typed movement][Safely Type Website] was born out of research into how to replace defensive programming.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -59,3 +85,4 @@ TBD
 [User-Supplied Optional Dependencies]: ./user-supplied-optional-dependencies.md
 [Value]: ./value.md
 [Value Object]: ./value-object.md
+[Safely Typed Website]: ./https://safelytyped.com
