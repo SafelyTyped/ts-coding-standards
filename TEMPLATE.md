@@ -59,4 +59,5 @@ Table of Contents:
 [Refined Type]: ../../glossary/refined-type.md
 [Rest Parameter]: ../../glossary/rest-parameter.md
 [Reusability]: ../../glossary/reusability.md
+[Side Effects]: ../../glossary/side-effects.md
 [Value Object]: ../../glossary/value-object.md

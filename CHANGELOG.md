@@ -99,6 +99,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Refined Type
   - added Rest Parameter
   - added Reusability
+  - added Side Effects
   - added Value Object
 
 ### Fixes
