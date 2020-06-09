@@ -64,4 +64,5 @@ Table of Contents:
 [Structural Typing]: ../../glossary/structural-typing.md
 [Type Alias]: ../../glossary/type-alias.md
 [Type Casting]: ../../glossary/type-casting.md
+[Type Guarantee]: ../../glossary/type-guarantee.md
 [Value Object]: ../../glossary/value-object.md
