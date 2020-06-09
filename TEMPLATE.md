@@ -37,6 +37,7 @@ Table of Contents:
 [End-User]: ../../glossary/end-user.md
 [Entity]: ../../glossary/entity.md
 [Exported Item]: ../../glossary/exported-item.md
+[Extension]: ../../glossary/extension.md
 [Flavoured Type]: ../../glossary/flavoured-type.md
 [Function Prefix]: ../../glossary/function-prefix.md
 [Function Signature]: ../../glossary/function-signature.md

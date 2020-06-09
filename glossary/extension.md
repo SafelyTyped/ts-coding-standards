@@ -1,48 +1,42 @@
-# GLOSSARY
+# Extension
 
-## Introduction
+An _extension_ is the code that implements a [protocol][Protocol].
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+// Value is a protocol
+export interface Value<T> {
+    /**
+     * `implementsValue()` helps the caller detect that we
+     * implement the protocol `Value`
+     */
+    implementsValue(): this is Value<T>;
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
+    /**
+     * `valueOf()` returns the data stored in this value.
+     */
+    valueOf(): T;
+}
 
+export class MediaType {
+    public implementsValue(): this is Value<string> {
+        return true;
+    }
+
+    public valueOf(): string {
+        return this.value;
+    }
+}
+```
+
+In the example above, the extension is made up of the methods `MediaType.implementsValue()` and `MediaType.valueOf()`.
+
+We've adoped the term _extension_ from the Swift community. We do our best to think about _extensions_ in the same way too.
+
+In particular, we encourage writing _extensions_ as standalone code that is patched into values at runtime using [@safelytyped/ts-protocol-extensions][@safelytyped/ts-protocol-extensions].
+
+[@safelytyped/ts-protocol-extensions]: https://github.com/SafelyTyped/ts-protocol-extensions/
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
 [CORRECTNESS]: ../impacted-areas/CORRECTNESS.md
@@ -71,13 +65,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
