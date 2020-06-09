@@ -28,4 +28,5 @@ Table of Contents:
 [CQRS]: ../../glossary/CQRS.md
 [Data Bag]: ../../glossary/data-bag.md
 [Data Guarantee]: ../../glossary/data-guarantee.md
+[Data Guard]: ../../glossary/data-guard.md
 [Value Object]: ../../glossary/value-object.md

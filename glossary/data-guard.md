@@ -1,20 +1,6 @@
-# GLOSSARY
+# Data Guard
 
-## Introduction
-
-Here's a list of all the jargon that we use in our coding standards.
-
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
-
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
+A _data guard_ is a function
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
