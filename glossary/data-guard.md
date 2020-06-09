@@ -1,6 +1,22 @@
 # Data Guard
 
-A _data guard_ is a function
+A _data guard_ is a function that checks to see if the given input meets a given spec.
+
+We use them in [data guarantees][Data Guarantee], so that the _data guarantees_ don't have to re-implement the same checks:
+
+```typescript
+function isUuidData(input: string) {
+    return UuidRegex.test(input);
+}
+
+function mustBeUuidData(input: string, { onError = THROW_THE_ERROR}: OnErrorOptions) {
+    if (!isUuidData(input)) {
+        throw new InvalidUuidError({public: { input }});
+    }
+}
+```
+
+_Data guards_ are an important part of creating, and working with _safe types_.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
