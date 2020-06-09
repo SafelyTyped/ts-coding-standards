@@ -74,6 +74,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Dependency Injection
   - added Dependency
   - added Docblock
+  - added End-User
   - added Value Object
 
 ### Fixes
