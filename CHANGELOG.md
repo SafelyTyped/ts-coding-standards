@@ -89,6 +89,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Instantiable Type
   - added Mandatory Dependency
   - added No-Op
+  - added Nominal Typing
   - added Value Object
 
 ### Fixes

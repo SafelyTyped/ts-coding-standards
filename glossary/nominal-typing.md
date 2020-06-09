@@ -1,41 +1,29 @@
-# GLOSSARY
+# Nominal Typing
 
-## Introduction
+Most programming languages use either _nominal typing_ or [structural typing][Structural Typing].
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+interface Cat {
+    legs: number;
+}
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
+interface Dog {
+    legs: number;
+}
+```
+
+* In _nominal typing_, `Cat` and `Dog` are different types, because their names are different.
+* In _structural typing_, `Cat` and `Dog` are the same type, because their structure is the same.
+
+_Nominal typing_ is more natural to developers, because it's how our societies work. In all walks of life, we're used to the idea of using names to tell things apart.
+
+_Nominal typing_ is more [robust][ROBUSTNESS] than [structural typing][Structural Typing]. It's more specific: you have to pass in the exact type that was intended. You can't accidentally pass in the wrong type.
+
+Typescript doesn't support _nominal typing_, because Javascript engines use _structural typing_.
+
+We can use [type branding][Branded Type] to emulate _nominal typing_ in Typescript.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -65,13 +53,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
