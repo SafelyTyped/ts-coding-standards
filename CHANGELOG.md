@@ -91,6 +91,7 @@ The following changes have been completed, and will be included in the next tagg
   - added No-Op
   - added Nominal Typing
   - added Optional Input
+  - added Overridden Method
   - added Value Object
 
 ### Fixes
