@@ -1,32 +1,18 @@
-# GLOSSARY
+# Hard-Coded
 
-## Introduction
+Something is said to be _hard-coded_ if the [end-user][End-User] cannot change it without editing your code.
 
-Here's a list of all the jargon that we use in our coding standards.
+This can include:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+* a [dependency][Dependency] on a specific module or library
+* the behaviour of your code (ie its logic or algorithm)
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
+Hard-coding something isn't always a bad thing. Functions with hard-coded dependencies and logic are necessary to avoid repeating code across an application.
+
+As a rule of thumb, we prefer to create:
+
+* general functions that support [dependency injection][Dependency Injection], and
+* specific functions that pass hard-coded dependencies into the underlying general function.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

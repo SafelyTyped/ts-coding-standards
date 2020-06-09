@@ -40,5 +40,6 @@ Table of Contents:
 [Flavoured Type]: ../../glossary/flavoured-type.md
 [Function Prefix]: ../../glossary/function-prefix.md
 [Function Signature]: ../../glossary/function-signature.md
+[Hard-Coded]: ../../glossary/hard-coded.md
 [Value Object]: ../../glossary/value-object.md
 
