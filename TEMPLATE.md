@@ -42,36 +42,6 @@ Table of Contents:
 [Function Signature]: ../../glossary/function-signature.md
 [Hard-Coded]: ../../glossary/hard-coded.md
 [Identity]: ../../glossary/identity.md
+[Identity Function]: ../../glossary/identity-function.md
 [Value Object]: ../../glossary/value-object.md
 
-[Identity Function]: ../../glossary/identity-function.md
-[Identity Type]: ../../glossary/identity-type.md
-[Immutability]: ../../glossary/immutability.md
-[Inherited Method]: ../../glossary/inherited-method.md
-[Instantiable Type]: ../../glossary/instantiable-type.md
-[Mandatory Dependency]: ../../glossary/mandatory-dependency.md
-[Nominal Typing]: ../../glossary/nominal-typing.md
-[Optional Input]: ../../glossary/optional-input.md
-[Overridden Method]: ../../glossary/overridden-method.md
-[Plain Object]: ../../glossary/plain-object.md
-[Primitive Type]: ../../glossary/primitive-type.md
-[Protocol]: ../../glossary/protocol.md
-[Refined Type]: ../../glossary/refined-type.md
-[Rest Parameter]: ../../glossary/rest-parameter.md
-[Reusability]: ../../glossary/reusability.md
-[Side Effects]: ../../glossary/side-effects.md
-[Smart Constructor]: ../../glossary/smart-constructor.md
-[Structural Typing]: ../../glossary/structural-typing.md
-[Type Alias]: ../../glossary/type-alias.md
-[Type Casting]: ../../glossary/type-casting.md
-[Type Guarantee]: ../../glossary/type-guarantee.md
-[Type Guard]: ../../glossary/type-guard.md
-[Type Inference]: ../../glossary/type-inference.md
-[Type Predicate]: ../../glossary/type-predicate.md
-[Type Signature]: ../../glossary/type-signature.md
-[User-Supplied Functional Options]: ../../glossary/user-supplied-functional-options.md
-[User-Supplied Input]: ../../glossary/user-supplied-input.md
-[User-Supplied Options]: ../../glossary/user-supplied-options.md
-[User-Supplied Optional Dependencies]: ../../glossary/user-supplied-optional-dependencies.md
-[Value]: ../../glossary/value.md
-[Value Object]: ../../glossary/value-object.md

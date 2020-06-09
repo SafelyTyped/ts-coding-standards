@@ -1,34 +1,60 @@
-# GLOSSARY
+# Identity Function
 
-## Introduction
+An _identity function_ is a function that returns the exact same value that it received as input:
 
-Here's a list of all the jargon that we use in our coding standards.
+```typescript
+//
+export const identity<T> = (x: T) => x;
+```
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+They're more commonly seen in functional programming than in imperative programming.
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
+In imperative programming, we mainly see them used as a [no-op][No-Op] when dealing with [mandatory dependencies][Mandatory Dependency].
+
+For example:
+
+```typescript
+type TransformFn = (x: any) => string;
+
+function normaliseToString(transform: TransformFn, input: any, ...normalisers: Identity<string>) {
+    // our return value
+    let retval = transform(input);
+
+    // apply the normalisers (if we have any)
+    normalisers.forEach((fn) => { retval = fn(retval); });
+
+    // all done
+    return retval;
+}
+
+// if we want to use `normaliseToString()` with a string,
+// we would use the `identity()` function:
+normaliseToString(identity, "HELLO WORLD", String.toLowerCase);
+```
+
+Without the identity function, we'd have to write an `if` statement instead:
+
+```typescript
+type TransformFn = (x: any) => string;
+
+function normaliseToString(transform: TransformFn, input: any, ...normalisers: Identity<string>) {
+    // our return value
+    let retval: string;
+
+    // make sure we have a string
+    if (typeof input === string) {
+        retval = input;
+    } else {
+        retval = transform(input);
+    }
+
+    // do the normalisation
+    normalisers.forEach((fn) => { retval = fn(retval); });
+
+    // all done
+    return retval;
+}
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -59,12 +85,10 @@ Table of Contents:
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
 [Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
