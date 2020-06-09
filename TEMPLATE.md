@@ -54,4 +54,5 @@ Table of Contents:
 [Overridden Method]: ../../glossary/overridden-method.md
 [Plain Object]: ../../glossary/plain-object.md
 [Primitive Type]: ../../glossary/primitive-type.md
+[Protocol]: ../../glossary/protocol.md
 [Value Object]: ../../glossary/value-object.md

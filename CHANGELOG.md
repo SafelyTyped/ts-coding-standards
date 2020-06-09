@@ -94,6 +94,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Overridden Method
   - added Plain Object
   - added Primitive Type
+  - added Protocol
   - added Value Object
 
 ### Fixes

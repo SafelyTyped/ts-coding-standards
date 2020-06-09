@@ -1,46 +1,32 @@
-# GLOSSARY
+# Protocol
 
-## Introduction
+A _protocol_ is a Typescript interface that describes a behaviour.
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+export interface Value<T> {
+    /**
+     * `valueOf()` returns the data stored in this value.
+     */
+    valueOf(): T;
+}
+```
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
+We've adoped the term _protocol_ from the Swift community. In particular, we call the code that implements a _protocol_ an [extension][Extension].
+
+We think about protocols in the same way that the Golang standard library uses interfaces.
+
+```typescript
+// we write functions that accept protocols, not class names
+//
+// you can pass anything in as the `location`,
+// as long as it implements the `Retrieval` protocol
+function retrieve(logger: Logger, location: Retrieval) {
+    logger.logInfo("retrieving data");
+    return location.retrieve();
+}
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -65,18 +51,16 @@ Table of Contents:
 [End-User]: ./end-user.md
 [Entity]: ./entity.md
 [Exported Item]: ./exported-item.md
+[Extension]: ./extension.md
 [Flavoured Type]: ./flavoured-type.md
 [Function Prefix]: ./function-prefix.md
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
