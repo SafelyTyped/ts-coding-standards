@@ -71,6 +71,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Data Guard
   - added Default Value
   - added Defensive Programming
+  - added Dependency Injection
   - added Value Object
 
 ### Fixes

@@ -31,4 +31,5 @@ Table of Contents:
 [Data Guard]: ../../glossary/data-guard.md
 [Default Value]: ../../glossary/default-value.md
 [Defensive Programming]: ../../glossary/defensive-programming.md
+[Dependency Injection]: ../../glossary/dependency-injection.md
 [Value Object]: ../../glossary/value-object.md
