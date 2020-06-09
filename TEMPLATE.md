@@ -26,4 +26,5 @@ Table of Contents:
 [Branded Type]: ../../glossary/branded-type.md
 [Caller]: ../../glossary/caller.md
 [CQRS]: ../../glossary/CQRS.md
+[Data Bag]: ../../glossary/data-bag.md
 [Value Object]: ../../glossary/value-object.md

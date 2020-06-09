@@ -1,18 +1,22 @@
-# GLOSSARY
+# Data Bag
 
-## Introduction
+A _data bag_ is an object that has no methods. It's only purpose is to hold data.
 
-Here's a list of all the jargon that we use in our coding standards.
+It is normally a [plain object][Plain Object].
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+It's structure is normally defined by an interface.
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
+For example:
+
+```typescript
+interface ValidationErrorParams {
+    reason: string;
+}
+
+const myData: ValidationErrorParams = {
+    reason: "input did not match the supported format",
+};
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

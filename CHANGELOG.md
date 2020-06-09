@@ -66,6 +66,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Branded Type
   - added Caller
   - added CQRS
+  - added Data Bag
   - added Value Object
 
 ### Fixes
