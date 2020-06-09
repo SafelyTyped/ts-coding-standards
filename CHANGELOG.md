@@ -107,6 +107,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Type Guarantee
   - added Type Guard
   - added Type Inference
+  - added Type Predicate
   - added Value Object
 
 ### Fixes
