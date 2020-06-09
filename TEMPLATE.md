@@ -58,4 +58,5 @@ Table of Contents:
 [Protocol]: ../../glossary/protocol.md
 [Refined Type]: ../../glossary/refined-type.md
 [Rest Parameter]: ../../glossary/rest-parameter.md
+[Reusability]: ../../glossary/reusability.md
 [Value Object]: ../../glossary/value-object.md
