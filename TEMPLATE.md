@@ -39,5 +39,6 @@ Table of Contents:
 [Exported Item]: ../../glossary/exported-item.md
 [Flavoured Type]: ../../glossary/flavoured-type.md
 [Function Prefix]: ../../glossary/function-prefix.md
+[Function Signature]: ../../glossary/function-signature.md
 [Value Object]: ../../glossary/value-object.md
 
