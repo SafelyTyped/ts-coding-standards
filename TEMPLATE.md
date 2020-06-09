@@ -70,4 +70,5 @@ Table of Contents:
 [Type Predicate]: ../../glossary/type-predicate.md
 [Type Signature]: ../../glossary/type-signature.md
 [User-Supplied Functional Options]: ../../glossary/user-supplied-functional-options.md
+[User-Supplied Input]: ../../glossary/user-supplied-input.md
 [Value Object]: ../../glossary/value-object.md

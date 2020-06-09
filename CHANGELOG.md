@@ -110,6 +110,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Type Predicate
   - added Type Signature
   - added User-Supplied Functional Options
+  - added User-Supplied Input
   - added Value Object
 
 ### Fixes

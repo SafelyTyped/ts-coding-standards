@@ -1,62 +1,30 @@
-# GLOSSARY
+# User-Supplied Input
 
-## Introduction
+_User-supplied input_ is data that the [end-user][End-User] will provide. It's the data that the function operates on.
 
-Here's a list of all the jargon that we use in our coding standards.
+It is passed into your function as one or more parameters.
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+For example:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
-- [Type Alias][Type Alias]
-- [Type Casting][Type Casting]
-- [Type Guarantee][Type Guarantee]
-- [Type Guard][Type Guard]
-- [Type Inference][Type Inference]
-- [Type Predicate][Type Predicate]
-- [Type Signature][Type Signature]
-- [User-Supplied Functional Options][User-Supplied Functional Options]
-- [User-Supplied Input][User-Supplied Input]
+```typescript
+function queryDatastore(
+    logger: Logger,
+    db: DbConn,
+    sql: string
+): unknown {
+    logger.logInfo("querying the datastore!")
+    return db.query(sql);
+}
+
+const query = (sql: string): unknown => queryDatastore(myLogger, myDB);
+```
+
+In this example:
+
+* both `logger` and `db` are [mandatory dependencies][Mandatory Dependency]. They're functions that your code calls.
+* `sql` is _user-supplied input_. It's data passed in by the [end-user][End-User].
+
+It's perfectly normal for [mandatory dependencies][Mandatory Dependency] to be hidden in a wrapping function of some kind, just like what happens in `query()`. _User-supplied input_, on the other hand, is almost never hidden behind a wrapping function. Note how `query()` passes the `sql` parameter through to the general function `queryDatastore()`.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -86,13 +54,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
