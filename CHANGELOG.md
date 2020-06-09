@@ -72,6 +72,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Default Value
   - added Defensive Programming
   - added Dependency Injection
+  - Added Dependency
   - added Value Object
 
 ### Fixes
