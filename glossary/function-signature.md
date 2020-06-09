@@ -1,6 +1,23 @@
 # Function Signature
 
-TBD
+A _function signature_ is a type declaration. It tells the compiler:
+
+* how many input parameters the functions accepts (if any),
+* what type each of those input parameters are, and
+* what type of data (if any) the function returns.
+
+For example:
+
+```typescript
+// `SmartConstructor` is a function signature
+type SmartConstructor<IN, OUT> = (
+    input: IN,
+    { onError }: OnErrorOptions,
+    ...fnOptions: FunctionalOption<OUT>[]
+) => OUT;
+```
+
+_Function signatures_ are an essential part of a language's type system. Without them, we cannot safely pass functions as parameters, because the compiler can't make sure that we're passing compatible functions in.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
