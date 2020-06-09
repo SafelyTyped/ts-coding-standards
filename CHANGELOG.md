@@ -96,6 +96,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Plain Object
   - added Primitive Type
   - added Protocol
+  - added Refined Type
   - added Value Object
 
 ### Fixes

@@ -56,4 +56,5 @@ Table of Contents:
 [Plain Object]: ../../glossary/plain-object.md
 [Primitive Type]: ../../glossary/primitive-type.md
 [Protocol]: ../../glossary/protocol.md
+[Refined Type]: ../../glossary/refined-type.md
 [Value Object]: ../../glossary/value-object.md
