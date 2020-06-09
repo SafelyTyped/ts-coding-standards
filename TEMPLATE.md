@@ -48,5 +48,6 @@ Table of Contents:
 [Inherited Method]: ../../glossary/inherited-method.md
 [Instantiable Type]: ../../glossary/instantiable-type.md
 [Mandatory Dependency]: ../../glossary/mandatory-dependency.md
+[No-Op]: ../../glossary/no-op.md
 [Value Object]: ../../glossary/value-object.md
 

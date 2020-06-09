@@ -88,6 +88,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Inherited Method
   - added Instantiable Type
   - added Mandatory Dependency
+  - added No-Op
   - added Value Object
 
 ### Fixes

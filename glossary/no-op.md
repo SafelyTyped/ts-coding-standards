@@ -1,40 +1,36 @@
-# GLOSSARY
+# No-Op
 
-## Introduction
+A _no-op_ is a function that does nothing. _No-op_ is short for _no operation_.
 
-Here's a list of all the jargon that we use in our coding standards.
+We commonly use _no-ops_ to avoid writing `if` statements. There's an example of this in the [Identity Function][Identity Function] glossary entry.
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+We're interested in the `if` statements that are used to work out if a function should be called or not:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
+```typescript
+function myFunction(funcA: SomeFunctionType) {
+    if (some expression) {
+        funcA();
+    } else {
+        // do something else, because it isn't safe
+        // to call funcA()
+    }
+}
+```
+
+We don't need the `if` statement if it's always safe to call `funcA()`. That's where the _no-op_ comes in.
+
+* We design `funcA()` so that it's possible to create a _no-op_ for it.
+* Then it's up to the [caller][Caller] to pass in either a function that does something, or the _no-op_.
+
+Our function don't care either way. It doesn't need to care.
+
+```typescript
+function myFunction(funcA: SomeFunctionType) {
+    funcA();
+}
+```
+
+We've eliminated the `if` statement. That makes the code smaller, and makes our unit tests smaller, because we've eliminated complexity.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -65,12 +61,10 @@ Table of Contents:
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
 [Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
