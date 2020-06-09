@@ -62,4 +62,5 @@ Table of Contents:
 [Side Effects]: ../../glossary/side-effects.md
 [Smart Constructor]: ../../glossary/smart-constructor.md
 [Structural Typing]: ../../glossary/structural-typing.md
+[Type Alias]: ../../glossary/type-alias.md
 [Value Object]: ../../glossary/value-object.md

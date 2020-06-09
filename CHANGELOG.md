@@ -102,6 +102,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Side Effects
   - added Smart Constructor
   - added Structural Typing
+  - added Type Alias
   - added Value Object
 
 ### Fixes
