@@ -25,4 +25,5 @@ Table of Contents:
 [Base Class]: ../../glossary/base-class.md
 [Branded Type]: ../../glossary/branded-type.md
 [Caller]: ../../glossary/caller.md
+[CQRS]: ../../glossary/CQRS.md
 [Value Object]: ../../glossary/value-object.md
