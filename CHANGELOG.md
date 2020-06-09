@@ -100,6 +100,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Rest Parameter
   - added Reusability
   - added Side Effects
+  - added Smart Constructor
   - added Value Object
 
 ### Fixes

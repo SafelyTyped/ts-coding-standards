@@ -60,4 +60,5 @@ Table of Contents:
 [Rest Parameter]: ../../glossary/rest-parameter.md
 [Reusability]: ../../glossary/reusability.md
 [Side Effects]: ../../glossary/side-effects.md
+[Smart Constructor]: ../../glossary/smart-constructor.md
 [Value Object]: ../../glossary/value-object.md
