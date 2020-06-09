@@ -1,17 +1,17 @@
-# GLOSSARY
+# Caller
 
-## Introduction
+The _caller_ is any code that calls your function or method.
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+function fn1(input: any): void {
+    // ....
+}
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-
+// this is the caller
+fn1("hello world!");
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

@@ -24,4 +24,5 @@ Table of Contents:
 [TESTABILITY]: ../../impacted-areas/TESTABILITY.md
 [Base Class]: ../../glossary/base-class.md
 [Branded Type]: ../../glossary/branded-type.md
+[Caller]: ../../glossary/caller.md
 [Value Object]: ../../glossary/value-object.md
