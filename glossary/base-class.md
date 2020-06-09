@@ -1,15 +1,34 @@
-# GLOSSARY
+# Base Class
 
-## Introduction
+A _base class_ is a class:
 
-Here's a list of all the jargon that we use in our coding standards.
+* that has been added to provide shared functionality to child classes, and
+* that is not intended to exist as a standalone, [instantiable type][Instantiable Type]
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+For example:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Value Object][Value Object]
+```typescript
+// `ValueObject` is a base class
+class ValueObject<T> {
+    protected value T;
 
+    protected constructor(input: T) {
+        this.value = T;
+    }
+
+    public valueOf(): T {
+        return this.value;
+    }
+}
+
+// `MediaType` is a child class
+class MediaType extends ValueObject<string> {
+    public constructor(input: string) {
+        mustBeMediaTypeData(input);
+        super(input);
+    }
+}
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

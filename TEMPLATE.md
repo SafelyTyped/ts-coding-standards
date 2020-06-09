@@ -22,3 +22,5 @@ Table of Contents:
 [ROBUSTNESS]: ../../impacted-areas/ROBUSTNESS.md
 [SECURITY]: ../../impacted-areas/SECURITY.md
 [TESTABILITY]: ../../impacted-areas/TESTABILITY.md
+[Base Class]: ../../glossary/base-class.md
+[Value Object]: ../../glossary/value-object.md
