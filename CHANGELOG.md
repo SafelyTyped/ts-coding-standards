@@ -76,6 +76,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Docblock
   - added End-User
   - added Entity
+  - added Exported Item
   - added Value Object
 
 ### Fixes

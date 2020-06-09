@@ -36,5 +36,6 @@ Table of Contents:
 [Docblock]: ../../glossary/docblock.md
 [End-User]: ../../glossary/end-user.md
 [Entity]: ../../glossary/entity.md
+[Exported Item]: ../../glossary/exported-item.md
 [Value Object]: ../../glossary/value-object.md
 

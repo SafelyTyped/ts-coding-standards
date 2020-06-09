@@ -1,28 +1,34 @@
-# GLOSSARY
+# Exported Item
 
-## Introduction
+An _exported item_ is anything that is exported from the local module. This includes:
 
-Here's a list of all the jargon that we use in our coding standards.
+* everything exported out of any `.ts` file, even for internal use
+* anything exported outside the package via the `index.ts` files
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+For example:
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
+```typescript
+// this is an exported item
+export const DEFAULT_OPTIONS = {
+    opt1: true,
+}
+
+// so is this
+export type Identity<T> = (x: T) => T;
+
+// so is this
+export interface Options {
+    opt1: boolean;
+}
+
+// so is this
+export function normaliseString(input: string): string {
+    return input.toLowerCase();
+}
+
+// so is this
+export const normaliseStringArrow: Identity<string> = (x: string) => x.toLowerCase;
+```
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
