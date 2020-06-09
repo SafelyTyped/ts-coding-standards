@@ -45,5 +45,6 @@ Table of Contents:
 [Identity Function]: ../../glossary/identity-function.md
 [Identity Type]: ../../glossary/identity-type.md
 [Immutability]: ../../glossary/immutability.md
+[Inherited Method]: ../../glossary/inherited-method.md
 [Value Object]: ../../glossary/value-object.md
 

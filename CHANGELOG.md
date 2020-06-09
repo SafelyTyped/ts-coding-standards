@@ -85,6 +85,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Identity Function
   - added Identity Type
   - added Immutability
+  - added Inherited Method
   - added Value Object
 
 ### Fixes
