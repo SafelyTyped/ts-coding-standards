@@ -30,4 +30,5 @@ Table of Contents:
 [Data Guarantee]: ../../glossary/data-guarantee.md
 [Data Guard]: ../../glossary/data-guard.md
 [Default Value]: ../../glossary/default-value.md
+[Defensive Programming]: ../../glossary/defensive-programming.md
 [Value Object]: ../../glossary/value-object.md
