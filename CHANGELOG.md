@@ -75,6 +75,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Dependency
   - added Docblock
   - added End-User
+  - added Entity
   - added Value Object
 
 ### Fixes

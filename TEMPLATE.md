@@ -35,4 +35,6 @@ Table of Contents:
 [Dependency Injection]: ../../glossary/dependency-injection.md
 [Docblock]: ../../glossary/docblock.md
 [End-User]: ../../glossary/end-user.md
+[Entity]: ../../glossary/entity.md
 [Value Object]: ../../glossary/value-object.md
+
