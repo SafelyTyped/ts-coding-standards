@@ -66,4 +66,5 @@ Table of Contents:
 [Type Casting]: ../../glossary/type-casting.md
 [Type Guarantee]: ../../glossary/type-guarantee.md
 [Type Guard]: ../../glossary/type-guard.md
+[Type Inference]: ../../glossary/type-inference.md
 [Value Object]: ../../glossary/value-object.md

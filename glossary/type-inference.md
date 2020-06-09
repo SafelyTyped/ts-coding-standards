@@ -1,58 +1,27 @@
-# GLOSSARY
+# Type Inference
 
-## Introduction
+_Type inference_ is where the compiler can work out the type of a variable, generic parameter, and/or return type for you.
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+// the compiler can tell that `input` is a string
+// without us having to explicitly say so
+const input = "hello world!";
+```
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
-- [Type Alias][Type Alias]
-- [Type Casting][Type Casting]
-- [Type Guarantee][Type Guarantee]
-- [Type Guard][Type Guard]
-- [Type Inference][Type Inference]
+When it works, _type inference_ speeds up the process of writing code, because we don't have to take the time to explicitly say what type something is.
+
+We say "when it works", because the Typescript compiler is written to be fast first, and complete second. The _type inference_ algorithm will bail if it thinks it'll take too much time to work. That said, the compiler developers do keep adding more and more _type inference_ support.
+
+In theory, it can go wrong as well :)
+
+The main problem with _type inference_ is that relying on it is a form of _happy path development_.
+
+* If you're not adding types to your code, you might not spot where you've written code to call the wrong function or method.
+* The compiler can't do that for you, because it doesn't know which types you _meant_ to use.
+
+You're effectively using the compiler on auto-pilot, and hoping for the best.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -82,13 +51,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md
