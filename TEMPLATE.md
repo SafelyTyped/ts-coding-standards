@@ -29,4 +29,5 @@ Table of Contents:
 [Data Bag]: ../../glossary/data-bag.md
 [Data Guarantee]: ../../glossary/data-guarantee.md
 [Data Guard]: ../../glossary/data-guard.md
+[Default Value]: ../../glossary/default-value.md
 [Value Object]: ../../glossary/value-object.md

@@ -69,6 +69,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Data Bag
   - added Data Guarantee
   - added Data Guard
+  - added Default Value
   - added Value Object
 
 ### Fixes
