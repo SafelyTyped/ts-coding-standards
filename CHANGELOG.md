@@ -81,6 +81,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Function Prefix
   - added Function Signature
   - added Hard-Coded
+  - added Identity
   - added Value Object
 
 ### Fixes

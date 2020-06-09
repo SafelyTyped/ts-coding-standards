@@ -1,33 +1,8 @@
-# GLOSSARY
+# Identity
 
-## Introduction
+_Identity_ is the properties of an [entity][Entity] that are used to determine if two entities are the same or not.
 
-Here's a list of all the jargon that we use in our coding standards.
-
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
-
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
+For example, database entities normally have a _primary key_, made up of one or more columns from the record. A _primary key_ is the database record's _identity_.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
