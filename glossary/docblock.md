@@ -2,6 +2,77 @@
 
 A _docblock_ is a comment immediately preceeding the definition of a type or value.
 
+Tools like Typedoc can auto-generate reference documentation from the contents of your _docblocks_.
+
+Normal comments start with `//` on every line. Docblocks start with a `/**` so that the tools can tell them apart from regular comments.
+
+Here's an example:
+
+```typescript
+/**
+ * ValueObject is the base class for defining your Value Object
+ * hierarchies.
+ *
+ * Every Value Object:
+ *
+ * - has a stored value
+ * - that you can get the valueOf()
+ *
+ * We've deliberately kept this as minimal as possible. We're looking to
+ * support idiomatic TypeScript code, rather than functional programming.
+ *
+ * If you do want fully-functional programming, use one of the many
+ * excellent libraries that are out there instead.
+ *
+ * Use {@link EntityObject} for data that has an identity (a primary key).
+ *
+ * @category Archetypes
+ * @template T the type that's wrapped by this class
+ */
+export class ValueObject<T> implements Value<T> {
+    /**
+     * value is the data that we wrap.
+     *
+     * Child classes are welcome to access it directly (to avoid the cost
+     * of a call to `valueOf()`), but must never modify the data at all.
+     *
+     * @returns the data that is stored in this object.
+     */
+    protected readonly value: T;
+
+    /**
+     * Constructor builds a new ValueObject.
+     *
+     * @param input the data to store in this object.
+     */
+    protected constructor(input: T) {
+        this.value = input;
+    }
+
+    /**
+     * valueOf() returns the wrapped value.
+     *
+     * For types passed by reference, we do NOT return a clone of any kind.
+     * You have to be careful not to accidentally change this value.
+     *
+     * @returns the data that is stored in this object.
+     */
+    public valueOf(): T {
+        return this.value;
+    }
+
+    /**
+     * implementsValue() is a helper method for the {@link isValue} type guard
+     * function.
+     */
+    public implementsValue(): this is Value<T> {
+        return true;
+    }
+}
+```
+
+At the time of writing, there isn't a single, well-supported standard for writing _docblocks_ for Typescript.
+
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
 [CORRECTNESS]: ../impacted-areas/CORRECTNESS.md
