@@ -101,6 +101,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Reusability
   - added Side Effects
   - added Smart Constructor
+  - added Structural Typing
   - added Value Object
 
 ### Fixes

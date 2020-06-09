@@ -1,53 +1,32 @@
-# GLOSSARY
+# Structural Typing
 
-## Introduction
+Most programming languages use either [nominal typing][Nominal Typing] or _structural typing_.
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+```typescript
+interface Cat {
+    legs: number;
+}
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
+interface Dog {
+    legs: number;
+}
+```
+
+* In _nominal typing_, `Cat` and `Dog` are different types, because their names are different.
+* In _structural typing_, `Cat` and `Dog` are the same type, because their structure is the same.
+
+_Structural typing_ is closer to the original concept of object-oriented programming. It allows us to work with data based on its behaviours, rather than its name.
+
+
+At first glance, _structural typing_ is less [robust][ROBUSTNESS] than [nominal typing][Nominal Typing]. If you pass in the wrong type of data, but it happens to have the same structure as the correct type of data, the compiler cannot warn you about your mistake.
+
+However, _structural typing_ makes it easier to reuse code - and reusing tested code is an important way to improve the robustness of an app. We don't have to put up with limitations or bugs in existing types that we cannot modify. We can make our own types, and as long as they have the same structure, we can use them wherever the existing type is accepted.
+
+And, you can reduce the risks of passing in the wrong type of data by using [type branding][Branded Type] on classes and interfaces.
+
+Typescript uses _structural typing_, because the underlying Javascript engines use _structural typing_.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -77,13 +56,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md

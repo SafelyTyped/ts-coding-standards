@@ -61,4 +61,5 @@ Table of Contents:
 [Reusability]: ../../glossary/reusability.md
 [Side Effects]: ../../glossary/side-effects.md
 [Smart Constructor]: ../../glossary/smart-constructor.md
+[Structural Typing]: ../../glossary/structural-typing.md
 [Value Object]: ../../glossary/value-object.md
