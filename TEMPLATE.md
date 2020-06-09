@@ -27,4 +27,5 @@ Table of Contents:
 [Caller]: ../../glossary/caller.md
 [CQRS]: ../../glossary/CQRS.md
 [Data Bag]: ../../glossary/data-bag.md
+[Data Guarantee]: ../../glossary/data-guarantee.md
 [Value Object]: ../../glossary/value-object.md

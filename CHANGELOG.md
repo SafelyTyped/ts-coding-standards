@@ -67,6 +67,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Caller
   - added CQRS
   - added Data Bag
+  - added Data Guarantee
   - added Value Object
 
 ### Fixes
