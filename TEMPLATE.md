@@ -47,5 +47,6 @@ Table of Contents:
 [Immutability]: ../../glossary/immutability.md
 [Inherited Method]: ../../glossary/inherited-method.md
 [Instantiable Type]: ../../glossary/instantiable-type.md
+[Mandatory Dependency]: ../../glossary/mandatory-dependency.md
 [Value Object]: ../../glossary/value-object.md
 
