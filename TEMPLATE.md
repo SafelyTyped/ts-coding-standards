@@ -38,5 +38,6 @@ Table of Contents:
 [Entity]: ../../glossary/entity.md
 [Exported Item]: ../../glossary/exported-item.md
 [Flavoured Type]: ../../glossary/flavoured-type.md
+[Function Prefix]: ../../glossary/function-prefix.md
 [Value Object]: ../../glossary/value-object.md
 

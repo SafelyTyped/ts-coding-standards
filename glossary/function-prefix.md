@@ -1,30 +1,21 @@
-# GLOSSARY
+# Function Prefix
 
-## Introduction
+A _function prefix_ is one of more words at the start of a function name.
 
-Here's a list of all the jargon that we use in our coding standards.
+For example:
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+* the `is` in `isValue()`
+* the `mustBe` in `mustBeValue()`
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
+We use function prefixes to tell the [end-user][End-User] what kind of work a function does.
+
+For example:
+
+* anything starting with `is` is a [type guard][Type Guard]
+* anything starting with `mustBe` is a [type guarantee][Type Guarantee]
+* anything starting with `make` is a [smart constructor][Smart Constructor]
+
+and so on.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
