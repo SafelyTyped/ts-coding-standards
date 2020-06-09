@@ -1,45 +1,15 @@
-# GLOSSARY
+# Primitive Type
 
-## Introduction
+A _primitive type_ is a built-in type, such as:
 
-Here's a list of all the jargon that we use in our coding standards.
+* `boolean`
+* `object`
+* `null`
+* `number`
+* `string`
+* `undefined`
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
-
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
+A _primitive type_ is any type that isn't created using the `new` keyword.
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -69,13 +39,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md

@@ -53,4 +53,5 @@ Table of Contents:
 [Optional Input]: ../../glossary/optional-input.md
 [Overridden Method]: ../../glossary/overridden-method.md
 [Plain Object]: ../../glossary/plain-object.md
+[Primitive Type]: ../../glossary/primitive-type.md
 [Value Object]: ../../glossary/value-object.md
