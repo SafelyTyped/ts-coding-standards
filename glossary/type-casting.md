@@ -1,55 +1,15 @@
-# GLOSSARY
+# Type Casting
 
-## Introduction
+_Type casting_ is where we override the compiler, and tell it the type of a variable or function.
 
-Here's a list of all the jargon that we use in our coding standards.
+In Typescript, this is done using the `as` keyword.
 
-If our coding standard says one thing, and this Glossary says something else, please assume that the coding standard is wrong, and file a bug report.
+**A type cast disables all of the compiler's safety features.** The moment we use a _type cast_, we're telling the compiler to completely trust us. In effect, we're telling the compiler that we know best.
 
-Table of Contents:
-- [Base Class][Base Class]
-- [Branded Type][Branded Type]
-- [Value Object][Value Object]
-- [Caller][Caller]
-- [Command/Query Responsibility Segregation (CQRS)][CQRS]
-- [Data Bag][Data Bag]
-- [Data Guarantee][Data Guarantee]
-- [Data Guard][Data Guard]
-- [Default Value][Default Value]
-- [Defensive Programming][Defensive Programming]
-- [Dependency Injection][Dependency Injection]
-- [Dependency][Dependency]
-- [Docblock][Docblock]
-- [End-User][End-User]
-- [Entity][Entity]
-- [Exported Item][Exported Item]
-- [Extension][Extension]
-- [Flavoured Type][Flavoured Type]
-- [Function Prefix][Function Prefix]
-- [Function Signature][Function Signature]
-- [Hard-Coded][Hard-Coded]
-- [Identity][Identity]
-- [Identity Function][Identity Function]
-- [Identity Type][Identity Type]
-- [Immutability][Immutability]
-- [Inherited Method][Inherited Method]
-- [Instantiable Type][Instantiable Type]
-- [Mandatory Dependency][Mandatory Dependency]
-- [No-Op][No-Op]
-- [Nominal Typing][Nominal Typing]
-- [Optional Input / Optional Parameter / Default Parameter][Optional Input]
-- [Overridden Method][Overridden Method]
-- [Plain Object][Plain Object]
-- [Primitive Type][Primitive Type]
-- [Protocol][Protocol]
-- [Refined Type][Refined Type]
-- [Rest Parameter / Variadic Parameter][Rest Parameter]
-- [Reusability][Reusability]
-- [Side Effects][Side Effects]
-- [Smart Constructor][Smart Constructor]
-- [Structural Typing][Structural Typing]
-- [Type Alias][Type Alias]
-- [Type Casting][Type Casting]
+Sometimes, we have no choice.
+
+* Sometimes, the Typescript compiler can't work out for itself what type something is. The [type inference](#type-inference) algorithm isn't all-powerful, especially where generics are involved!
+* Sometimes, a function is there specifically to do a _type cast_ (for example, the smart constructors for [branded](#branded-type) and [flavoured](#flavoured-type) types).
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
@@ -79,13 +39,10 @@ Table of Contents:
 [Function Signature]: ./function-signature.md
 [Hard-Coded]: ./hard-coded.md
 [Identity]: ./identity.md
-[Identity Function]: ./identity-function.md
-[Identity Type]: ./identity-type.md
 [Immutability]: ./immutability.md
 [Inherited Method]: ./inherited-method.md
 [Instantiable Type]: ./instantiable-type.md
 [Mandatory Dependency]: ./mandatory-dependency.md
-[No-Op]: ./no-op.md
 [Nominal Typing]: ./nominal-typing.md
 [Optional Input]: ./optional-input.md
 [Overridden Method]: ./overridden-method.md

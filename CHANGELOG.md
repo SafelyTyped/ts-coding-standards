@@ -103,6 +103,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Smart Constructor
   - added Structural Typing
   - added Type Alias
+  - added Type Casting
   - added Value Object
 
 ### Fixes

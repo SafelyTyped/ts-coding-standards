@@ -63,4 +63,5 @@ Table of Contents:
 [Smart Constructor]: ../../glossary/smart-constructor.md
 [Structural Typing]: ../../glossary/structural-typing.md
 [Type Alias]: ../../glossary/type-alias.md
+[Type Casting]: ../../glossary/type-casting.md
 [Value Object]: ../../glossary/value-object.md
