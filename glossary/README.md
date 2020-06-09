@@ -84,6 +84,7 @@ Table of Contents:
 [End-User]: ./end-user.md
 [Entity]: ./entity.md
 [Exported Item]: ./exported-item.md
+[Extension]: ./extension.md
 [Flavoured Type]: ./flavoured-type.md
 [Function Prefix]: ./function-prefix.md
 [Function Signature]: ./function-signature.md
