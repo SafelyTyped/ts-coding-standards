@@ -1,6 +1,26 @@
 # Data Guarantee
 
-TBD
+A _data guarantee_ is a function that throws an `Error` if the input doesn't meet whatever specification the _data guarantee_ enforces.
+
+For example:
+
+```typescript
+export function mustBeUuidData(
+    input: string,
+    onError: OnError
+): void {
+    if (isUuidData(input)) {
+        return true;
+    }
+
+    throw onError(new TypeError("input is not a value!!));
+}
+```
+
+The key properties of a _data guarantee_ are:
+
+* it is asserting that the input passes a given test, ie that the data it contains is acceptable in some way
+* there's no return value, so it doesn't matter if the [caller][Caller] forgets to check it
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
