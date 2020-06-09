@@ -58,6 +58,7 @@ Table of Contents:
 - [User-Supplied Functional Options][User-Supplied Functional Options]
 - [User-Supplied Input][User-Supplied Input]
 - [User-Supplied Options][User-Supplied Options]
+- [User-Supplied Optional Dependencies][User-Supplied Optional Dependencies]
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md

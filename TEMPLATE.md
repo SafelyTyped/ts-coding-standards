@@ -72,4 +72,5 @@ Table of Contents:
 [User-Supplied Functional Options]: ../../glossary/user-supplied-functional-options.md
 [User-Supplied Input]: ../../glossary/user-supplied-input.md
 [User-Supplied Options]: ../../glossary/user-supplied-options.md
+[User-Supplied Optional Dependencies]: ../../glossary/user-supplied-optional-dependencies.md
 [Value Object]: ../../glossary/value-object.md

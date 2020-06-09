@@ -112,6 +112,7 @@ The following changes have been completed, and will be included in the next tagg
   - added User-Supplied Functional Options
   - added User-Supplied Input
   - added User-Supplied Options
+  - added User-Supplied Optional Dependencies
   - added Value Object
 
 ### Fixes
