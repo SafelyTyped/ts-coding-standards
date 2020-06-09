@@ -9,7 +9,6 @@ If our coding standard says one thing, and this Glossary says something else, pl
 Table of Contents:
 - [Base Class][Base Class]
 - [Branded Type][Branded Type]
-- [Value Object][Value Object]
 - [Caller][Caller]
 - [Command/Query Responsibility Segregation (CQRS)][CQRS]
 - [Data Bag][Data Bag]
@@ -59,6 +58,8 @@ Table of Contents:
 - [User-Supplied Input][User-Supplied Input]
 - [User-Supplied Options][User-Supplied Options]
 - [User-Supplied Optional Dependencies][User-Supplied Optional Dependencies]
+- [Value][Value]
+- [Value Object][Value Object]
 
 [ADOPTION]: ../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../impacted-areas/CONTRIBUTIONS.md
