@@ -27,39 +27,42 @@ The following changes have been completed, and will be included in the next tagg
 
 - Coding Review Guidelines
   - initial text
-- Documentation
-  - Added 3.1.1
-  - Added 3.1.2
-  - Added 3.1.3
-  - Added 3.1.4
-  - Added 3.1.5
-  - Added 3.1.6
-- Functions
-  - Added 2.8.1
-  - Added 2.8.2
-  - Added 2.8.3
-  - Added 2.8.4
-  - Added 2.8.5
-  - Added 2.8.6
-  - Added 2.8.7
-  - Added 2.8.8
-  - Added 3.8.1
-  - Added 3.8.2
-- Naming Conventions
-  - Added 2.3.1
-  - Added 2.3.2
-  - Added 2.3.3
-  - Added 2.3.4
-  - Added 3.3.1
-- Types
-  - Added 1.6.1
-  - Added 1.6.2
-  - Added 2.6.1
-  - Added 2.6.2
-  - Added 3.6.1
-- Type Guards
-  - Added 2.7.1
-  - Added 3.7.1
+- Coding Standards
+  - Documentation
+    - Added 3.1.1
+    - Added 3.1.2
+    - Added 3.1.3
+    - Added 3.1.4
+    - Added 3.1.5
+    - Added 3.1.6
+  - Functions
+    - Added 2.8.1
+    - Added 2.8.2
+    - Added 2.8.3
+    - Added 2.8.4
+    - Added 2.8.5
+    - Added 2.8.6
+    - Added 2.8.7
+    - Added 2.8.8
+    - Added 3.8.1
+    - Added 3.8.2
+  - Naming Conventions
+    - Added 2.3.1
+    - Added 2.3.2
+    - Added 2.3.3
+    - Added 2.3.4
+    - Added 3.3.1
+  - Types
+    - Added 1.6.1
+    - Added 1.6.2
+    - Added 2.6.1
+    - Added 2.6.2
+    - Added 3.6.1
+  - Type Guards
+    - Added 2.7.1
+    - Added 3.7.1
+- Glossary
+  - added Value Object
 
 ### Fixes
 
