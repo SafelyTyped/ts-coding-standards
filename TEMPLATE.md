@@ -68,4 +68,5 @@ Table of Contents:
 [Type Guard]: ../../glossary/type-guard.md
 [Type Inference]: ../../glossary/type-inference.md
 [Type Predicate]: ../../glossary/type-predicate.md
+[Type Signature]: ../../glossary/type-signature.md
 [Value Object]: ../../glossary/value-object.md
