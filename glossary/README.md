@@ -53,7 +53,6 @@ Table of Contents:
 - [Type Guard][Type Guard]
 - [Type Inference][Type Inference]
 - [Type Predicate][Type Predicate]
-- [Type Signature][Type Signature]
 - [User-Supplied Functional Options][User-Supplied Functional Options]
 - [User-Supplied Input][User-Supplied Input]
 - [User-Supplied Options][User-Supplied Options]
