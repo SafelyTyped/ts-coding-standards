@@ -24,7 +24,7 @@ They're based on the approach that Stuart has developed and refined over the las
 
 Watch this video to see Stuart talking about this approach:
 
-[![](assets/YouTube-Coding-Standards.png)](https://www.youtube.com/watch?v=bPTUmKc_F_g)
+[![Thumbnail of the Coding Standards Video Title Screen](assets/YouTube-Coding-Standards.png)](https://www.youtube.com/watch?v=bPTUmKc_F_g)
 
 ## The Standards
 
