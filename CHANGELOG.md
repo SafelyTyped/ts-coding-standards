@@ -54,6 +54,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 2.3.3
     - Added 2.3.4
     - Added 3.3.1
+    - Added 3.3.2
   - Types
     - Added 1.6.1
     - Added 1.6.2
