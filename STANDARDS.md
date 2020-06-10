@@ -26,8 +26,8 @@ We've split the coding standards up into three different levels of importance.
 
 Level | Description
 ------|-------------------------------------
-Key   | Getting these right first time avoids backwards-compatibility breaks, and other issues that cost our end-users significant time.
-Major | Getting these right first time avoids significant bugs or expensive rework.
+Key   | These are the items that define our purpose.
+Major | Getting these right first time avoids significant bugs, expensive rework, and backwards-compatibility breaks.
 Minor | These are consistency / stylistic / philosophical points.
 
 ## Categories
