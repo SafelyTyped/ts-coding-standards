@@ -104,6 +104,7 @@ Minor | [3.1.6][3.1.6] | Documentation | Write docblocks for methods inherited f
 Minor | [3.3.1][3.3.1] | Naming Conventions | Every function or method must start with `<verb><noun>`. | [Adoption][ADOPTION]
 Minor | [3.3.2][3.3.2] | Naming Conventions | Use camelCase for all function names. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.3][3.3.3] | Naming Conventions | Use camelCase for all variable names. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
+Minor | [3.3.4][3.3.4] | Naming Conventions | Use SCREAMING_SNAKE_CASE for all constants. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
 Minor | [3.8.1][3.8.1] | Functions | Create a type for your function's user-supplied options. | [Adoption][ADOPTION]
@@ -148,6 +149,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.3.1]: ./categories/naming-conventions/3.3.1.md
 [3.3.2]: ./categories/naming-conventions/3.3.2.md
 [3.3.3]: ./categories/naming-conventions/3.3.3.md
+[3.3.4]: ./categories/naming-conventions/3.3.4.md
 [3.6.1]: ./categories/types/3.6.1.md
 [3.7.1]: ./categories/type-guards/3.7.1.md
 [3.8.1]: ./categories/functions/3.8.1.md
