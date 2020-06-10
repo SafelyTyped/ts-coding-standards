@@ -68,6 +68,7 @@ The following changes have been completed, and will be included in the next tagg
   - Types
     - Added 1.6.1
     - Added 1.6.2
+    - Added 1.6.3
     - Added 2.6.1
     - Added 2.6.2
     - Added 3.6.1

@@ -69,6 +69,7 @@ Key | [1.2.2][1.2.2] | Errors | Only `throw` `AppError`s.  | [Adoption][ADOPTION
 Key | [1.5.1][1.5.1] | Unit Tests | All code must have 100% code coverage. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS], [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Robustness][ROBUSTNESS]
 Key | [1.6.1][1.6.1] | Types | All instantiable types must have a smart constructor. | [Robustness][ROBUSTNESS]
 Key | [1.6.2][1.6.2] | Types | Every instantiable type must have a type guard. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS], [Testability][TESTABILITY]
+Key | [1.6.3][1.6.3] | Types | Every instantiable type must have a type guarantee. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS], [Testability][TESTABILITY]
 
 ## Major Criteria
 
@@ -131,6 +132,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [1.5.1]: ./categories/unit-tests/1.5.1.md
 [1.6.1]: ./categories/types/1.6.1.md
 [1.6.2]: ./categories/types/1.6.2.md
+[1.6.3]: ./categories/types/1.6.3.md
 [2.3.1]: ./categories/naming-conventions/2.3.1.md
 [2.3.2]: ./categories/naming-conventions/2.3.2.md
 [2.3.3]: ./categories/naming-conventions/2.3.3.md
