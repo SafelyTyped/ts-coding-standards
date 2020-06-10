@@ -65,6 +65,7 @@ Area                | Impact
 Priority | ID | Category | Criteria | Impacts
 ---------|----|----------|----------|--------
 Key | [1.2.1][1.2.1] | Errors | Every function that has error conditions must accept an `OnError` handler. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS]
+Key | [1.5.1][1.5.1] | Unit Tests | All code must have 100% code coverage. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS], [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Robustness][ROBUSTNESS]
 Key | [1.6.1][1.6.1] | Types | All instantiable types must have a smart constructor. | [Robustness][ROBUSTNESS]
 Key | [1.6.2][1.6.2] | Types | Every instantiable type must have a type guard. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS], [Testability][TESTABILITY]
 
@@ -114,6 +115,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
 [1.2.1]: ./categories/errors/1.2.1.md
+[1.5.1]: ./categories/unit-tests/1.5.1.md
 [1.6.1]: ./categories/types/1.6.1.md
 [1.6.2]: ./categories/types/1.6.2.md
 [2.3.1]: ./categories/naming-conventions/2.3.1.md
