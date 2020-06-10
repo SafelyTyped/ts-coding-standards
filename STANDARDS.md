@@ -101,11 +101,11 @@ Minor | [3.1.3][3.1.3] | Documentation | Docblocks must use whole sentences. | [
 Minor | [3.1.4][3.1.4] | Documentation | Docblocks must use Typedoc tags. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.1.5][3.1.5] | Documentation | Write docblocks for overridden methods. | [Adoption][ADOPTION]
 Minor | [3.1.6][3.1.6] | Documentation | Write docblocks for methods inherited from interfaces. | [Adoption][ADOPTION]
-Minor | [3.3.1] | Naming Conventions | Every function or method must start with `<verb><noun>`. | [Adoption][ADOPTION]
+Minor | [3.3.1][3.3.1] | Naming Conventions | Every function or method must start with `<verb><noun>`. | [Adoption][ADOPTION]
 Minor | [3.3.2][3.3.2] | Naming Conventions | Use camelCase for all function names. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.3][3.3.3] | Naming Conventions | Use camelCase for all variable names. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
-Minor | [3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
+Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
 Minor | [3.8.1][3.8.1] | Functions | Create a type for your function's user-supplied options. | [Adoption][ADOPTION]
 Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dependencies. | [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Testability][TESTABILITY]
 
