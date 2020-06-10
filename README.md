@@ -29,3 +29,7 @@ Watch this video to see Stuart talking about this approach:
 ## The Standards
 
 See [STANDARDS.md](STANDARDS.md) for the all-in-one-document list.
+
+## Glossary
+
+We've put together a comprehensive [GLOSSARY.md](./glossary/README.md) to explain all of the jargon that we commonly use in the Safely Typed projects.
