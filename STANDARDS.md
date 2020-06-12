@@ -45,7 +45,8 @@ Functions              | .8.  | Ensures consistent behaviour from our public mod
 Naming Conventions     | .3.  | Ensures a consistent and tidier public module API (and our internal API too).
 Package Management     | .4.  | Ensures a consistent approach to packages over time.
 Protocols & Extensions | .10. | Ensures a consistent approach to extending types.
-Types                  | .6.  | Ensures our types really are safe types.
+Smart Constructors     | .14. | Ensures our types really are safe types.
+Types                  | .6.  | Ensures our types make for great building blocks.
 Type Guarantees        | .13. | Ensures [end-users][End-User] and maintainers can enforce type contracts reliably.
 Type Guards            | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
 Unit Tests             | .5.  | Ensures we ship less bugs and regressions.
@@ -144,6 +145,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [naming-conventions]: categories/naming-conventions/README.md
 [package-management]: categories/package-management/README.md
 [protocols-extensions]: categories/protocols-extensions/README.md
+[smart-constructors]: categories/smart-constructors/README.md
 [type-guarantees]: categories/type-guarantees/README.md
 [type-guards]: categories/type-guards/README.md
 [types]: categories/types/README.md
