@@ -36,6 +36,7 @@ To make it easier to find things, we've broken up the coding standards into thes
 
 Category           | ID  | Description
 -------------------|-----|------
+Coding Conventions | .9. |
 Documentation      | .1. |
 Errors             | .2. |
 Functions          | .8. |
