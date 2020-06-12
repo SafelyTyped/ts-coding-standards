@@ -29,7 +29,6 @@ The following changes have been completed, and will be included in the next tagg
   - initial text
 - Coding Standards
   - Documentation
-    - Added 1.3.1
     - Added 3.1.1
     - Added 3.1.2
     - Added 3.1.3
@@ -51,6 +50,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 3.8.1
     - Added 3.8.2
   - Naming Conventions
+    - Added 1.3.1
     - Added 2.3.1
     - Added 2.3.2
     - Added 2.3.3
@@ -66,6 +66,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 3.3.9
     - Added 3.3.10
     - Added 3.3.11
+    - Added 3.3.12
   - Protocols and Extensions
     - Added 2.10.1
   - Types

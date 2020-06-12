@@ -123,6 +123,7 @@ Minor | [3.3.8][3.3.8] | Naming Conventions | Use camelCase for all class proper
 Minor | [3.3.9][3.3.9] | Naming Conventions | Prefix private and protected class attributes with an underscore. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.10][3.3.10] | Naming Conventions | All Error class names must end with `Error`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.11][3.3.11] | Naming Conventions | All user-supplied option classes/interface names must end with `Options`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
+Key | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
 Minor | [3.6.2][3.6.2] | Types | Do not create static factory methods. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
@@ -247,6 +248,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.3.9]: ./categories/naming-conventions/3.3.9.md
 [3.3.10]: ./categories/naming-conventions/3.3.10.md
 [3.3.11]: ./categories/naming-conventions/3.3.11.md
+[3.3.12]: ./categories/naming-conventions/3.3.12.md
 [3.6.1]: ./categories/types/3.6.1.md
 [3.6.2]: ./categories/types/3.6.2.md
 [3.7.1]: ./categories/type-guards/3.7.1.md
