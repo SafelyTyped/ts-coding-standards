@@ -30,6 +30,7 @@ Priority | ID | Category | Criteria | Impacts
 [functions]: ../functions/README.md
 [naming-conventions]: ../naming-conventions/README.md
 [package-management]: ../package-management/README.md
+[protocols-extensions]: ../protocols-extensions/README.md
 [type-guards]: ../type-guards/README.md
 [types]: ../types/README.md
 [unit-tests]: ../unit-tests/README.md
