@@ -60,7 +60,7 @@ Minor | [3.3.8][3.3.8] | Naming Conventions | Use camelCase for all class proper
 Minor | [3.3.9][3.3.9] | Naming Conventions | Prefix private and protected class attributes with an underscore. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.10][3.3.10] | Naming Conventions | All Error class names must end with `Error`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.11][3.3.11] | Naming Conventions | All user-supplied option classes/interface names must end with `Options`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
-Key | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
+Minor | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
 
 [ADOPTION]: ../../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../../impacted-areas/CONTRIBUTIONS.md
