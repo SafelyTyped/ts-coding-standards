@@ -36,15 +36,15 @@ To make it easier to find things, we've broken up the coding standards into thes
 
 Category           | ID  | Description
 -------------------|-----|------
-Coding Conventions | .9. |
-Documentation      | .1. |
-Errors             | .2. |
-Functions          | .8. |
-Naming Conventions | .3. |
-Package Management | .4. |
-Types              | .6. |
-Type Guards        | .7. |
-Unit Tests         | .5. |
+Coding Conventions | .9. | Ensures a consistent coding style over time.
+Documentation      | .1. | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
+Errors             | .2. | Ensures our code handles failure in a consistent, production-friendly manner.
+Functions          | .8. | Ensures consistent behaviour from our public module API (and our internal API too).
+Naming Conventions | .3. | Ensures a consistent and tidier public module API (and our internal API too).
+Package Management | .4. | Ensures a consistent approach to packages over time.
+Types              | .6. | Ensures our types really are safe types.
+Type Guards        | .7. | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
+Unit Tests         | .5. | Ensures we ship less bugs and regressions.
 
 ## Impacted Areas
 
@@ -130,6 +130,58 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [ROBUSTNESS]: impacted-areas/ROBUSTNESS.md
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
+[Base Class]: glossary/base-class.md
+[Branded Type]: glossary/branded-type.md
+[Caller]: glossary/caller.md
+[CQRS]: glossary/CQRS.md
+[Data Bag]: glossary/data-bag.md
+[Data Guarantee]: glossary/data-guarantee.md
+[Data Guard]: glossary/data-guard.md
+[Default Value]: glossary/default-value.md
+[Defensive Programming]: glossary/defensive-programming.md
+[Dependency]: glossary/dependency.md
+[Dependency Injection]: glossary/dependency-injection.md
+[Docblock]: glossary/docblock.md
+[End-User]: glossary/end-user.md
+[Entity]: glossary/entity.md
+[Exported Item]: glossary/exported-item.md
+[Extension]: glossary/extension.md
+[Flavoured Type]: glossary/flavoured-type.md
+[Function Prefix]: glossary/function-prefix.md
+[Function Signature]: glossary/function-signature.md
+[Hard-Coded]: glossary/hard-coded.md
+[Identity]: glossary/identity.md
+[Identity Function]: glossary/identity-function.md
+[Identity Type]: glossary/identity-type.md
+[Immutability]: glossary/immutability.md
+[Inherited Method]: glossary/inherited-method.md
+[Instantiable Type]: glossary/instantiable-type.md
+[Mandatory Dependency]: glossary/mandatory-dependency.md
+[No-Op]: glossary/no-op.md
+[Nominal Typing]: glossary/nominal-typing.md
+[Optional Input]: glossary/optional-input.md
+[Overridden Method]: glossary/overridden-method.md
+[Plain Object]: glossary/plain-object.md
+[Primitive Type]: glossary/primitive-type.md
+[Protocol]: glossary/protocol.md
+[Refined Type]: glossary/refined-type.md
+[Rest Parameter]: glossary/rest-parameter.md
+[Reusability]: glossary/reusability.md
+[Side Effects]: glossary/side-effects.md
+[Smart Constructor]: glossary/smart-constructor.md
+[Structural Typing]: glossary/structural-typing.md
+[Type Alias]: glossary/type-alias.md
+[Type Casting]: glossary/type-casting.md
+[Type Guarantee]: glossary/type-guarantee.md
+[Type Guard]: glossary/type-guard.md
+[Type Inference]: glossary/type-inference.md
+[Type Predicate]: glossary/type-predicate.md
+[User-Supplied Functional Options]: glossary/user-supplied-functional-options.md
+[User-Supplied Input]: glossary/user-supplied-input.md
+[User-Supplied Options]: glossary/user-supplied-options.md
+[User-Supplied Optional Dependencies]: glossary/user-supplied-optional-dependencies.md
+[Value]: glossary/value.md
+[Value Object]: glossary/value-object.md
 [1.2.1]: ./categories/errors/1.2.1.md
 [1.2.2]: ./categories/errors/1.2.2.md
 [1.5.1]: ./categories/unit-tests/1.5.1.md
