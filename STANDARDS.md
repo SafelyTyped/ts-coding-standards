@@ -42,6 +42,7 @@ Errors             | .2. | Ensures our code handles failure in a consistent, pro
 Functions          | .8. | Ensures consistent behaviour from our public module API (and our internal API too).
 Naming Conventions | .3. | Ensures a consistent and tidier public module API (and our internal API too).
 Package Management | .4. | Ensures a consistent approach to packages over time.
+Protocols & Extensions | .10. | Ensures a consistent approach to extending types.
 Types              | .6. | Ensures our types really are safe types.
 Type Guards        | .7. | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
 Unit Tests         | .5. | Ensures we ship less bugs and regressions.
