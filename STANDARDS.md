@@ -95,6 +95,7 @@ Major | [2.8.6][2.8.6] | Functions | User-supplied options must be a single opti
 Major | [2.8.7][2.8.7] | Functions | Every property of the _user-supplied options_ parameter must be optional. | [Project Maintenance][PROJECT-MAINTENANCE]
 Major | [2.8.8][2.8.8] | Functions | Ever user-supplied option must have a default value. | [Adoption][ADOPTION], [Testability][TESTABILITY]
 Major | [2.8.9][2.8.9] | Functions | Functional options must be captured as a rest parameter. | [Adoption][ADOPTION]
+Major | [2.10.1][2.10.1] | [Protocols and Extensions][protocols-extensions] | Every protocol interface must define an `implementsXXX()` method. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS]
 
 ## Minor Criteria
 
@@ -131,6 +132,16 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [ROBUSTNESS]: impacted-areas/ROBUSTNESS.md
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
+[coding-conventions]: categories/coding-conventions/README.md
+[documentation]: categories/documentation/README.md
+[errors]: categories/errors/README.md
+[functions]: categories/functions/README.md
+[naming-conventions]: categories/naming-conventions/README.md
+[package-management]: categories/package-management/README.md
+[protocols-extensions]: categories/protocols-extensions/README.md
+[type-guards]: categories/type-guards/README.md
+[types]: categories/types/README.md
+[unit-tests]: categories/unit-tests/README.md
 [Base Class]: glossary/base-class.md
 [Branded Type]: glossary/branded-type.md
 [Caller]: glossary/caller.md
@@ -208,6 +219,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [2.8.8]: ./categories/functions/2.8.8.md
 [2.8.9]: ./categories/functions/2.8.9.md
 [2.8.10]: ./categories/functions/2.8.10.md
+[2.10.1]: ./categories/protocols-extensions/2.10.1.md
 [3.1.1]: ./categories/documentation/3.1.1.md
 [3.1.2]: ./categories/documentation/3.1.2.md
 [3.1.3]: ./categories/documentation/3.1.3.md
