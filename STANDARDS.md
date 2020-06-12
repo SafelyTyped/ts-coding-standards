@@ -34,22 +34,41 @@ Minor | These are consistency / stylistic / philosophical points.
 
 To make it easier to find things, we've broken up the coding standards into these groups:
 
-Category               | ID   | Description
------------------------|------|------------
-Coding Conventions     | .9.  | Ensures a consistent coding style over time.
-Data Guarantees        | .11. | Ensures [end-users][End-User] can enforce data contracts reliably.
-Data Guards            | .12. | Ensures [end-users][End-User] and maintainers can build data guarantees reliably.
-Documentation          | .1.  | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
-Errors                 | .2.  | Ensures our code handles failure in a consistent, production-friendly manner.
-Functions              | .8.  | Ensures consistent behaviour from our public module API (and our internal API too).
-Naming Conventions     | .3.  | Ensures a consistent and tidier public module API (and our internal API too).
-Package Management     | .4.  | Ensures a consistent approach to packages over time.
-Protocols & Extensions | .10. | Ensures a consistent approach to extending types.
-Smart Constructors     | .14. | Ensures our types really are safe types.
-Types                  | .6.  | Ensures our types make for great building blocks.
-Type Guarantees        | .13. | Ensures [end-users][End-User] and maintainers can enforce type contracts reliably.
-Type Guards            | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
-Unit Tests             | .5.  | Ensures we ship less bugs and regressions.
+Category                                       | ID   | Description
+-----------------------------------------------|------|------------
+[Coding Conventions][coding-conventions]       | .9.  | Ensures a consistent coding style over time.
+[Data Guarantees][data-guarantees]             | .11. | Ensures [end-users][End-User] can enforce data contracts reliably.
+[Data Guards][data-guards]                     | .12. | Ensures [end-users][End-User] and maintainers can build data guarantees reliably.
+[Documentation][documentation]                 | .1.  | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
+[Errors][errors]                               | .2.  | Ensures our code handles failure in a consistent, production-friendly manner.
+[Functions][functions]                         | .8.  | Ensures consistent behaviour from our public module API (and our internal API too).
+[Naming Conventions][naming-conventions]       | .3.  | Ensures a consistent and tidier public module API (and our internal API too).
+[Package Management][package-management]       | .4.  | Ensures a consistent approach to packages over time.
+[Protocols & Extensions][protocols-extensions] | .10. | Ensures a consistent approach to extending types.
+[Smart Constructors][smart-constructors]       | .14. | Ensures our types really are safe types.
+[Types][types]                                 | .6.  | Ensures our types make for great building blocks.
+[Type Guarantees][type-guarantees]             | .13. | Ensures [end-users][End-User] and maintainers can enforce type contracts reliably.
+[Type Guards][type-guards]                     | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
+[Unit Tests][unit-tests]                       | .5.  | Ensures we ship less bugs and regressions.
+
+Here they are, listed by ID order too:
+
+Category                                       | ID   | Description
+-----------------------------------------------|------|------------
+[Documentation][documentation]                 | .1.  | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
+[Errors][errors]                               | .2.  | Ensures our code handles failure in a consistent, production-friendly manner.
+[Naming Conventions][naming-conventions]       | .3.  | Ensures a consistent and tidier public module API (and our internal API too).
+[Package Management][package-management]       | .4.  | Ensures a consistent approach to packages over time.
+[Unit Tests][unit-tests]                       | .5.  | Ensures we ship less bugs and regressions.
+[Types][types]                                 | .6.  | Ensures our types make for great building blocks.
+[Type Guards][type-guards]                     | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
+[Functions][functions]                         | .8.  | Ensures consistent behaviour from our public module API (and our internal API too).
+[Coding Conventions][coding-conventions]       | .9.  | Ensures a consistent coding style over time.
+[Protocols & Extensions][protocols-extensions] | .10. | Ensures a consistent approach to extending types.
+[Data Guarantees][data-guarantees]             | .11. | Ensures [end-users][End-User] can enforce data contracts reliably.
+[Data Guards][data-guards]                     | .12. | Ensures [end-users][End-User] and maintainers can build data guarantees reliably.
+[Type Guarantees][type-guarantees]             | .13. | Ensures [end-users][End-User] and maintainers can enforce type contracts reliably.
+[Smart Constructors][smart-constructors]       | .14. | Ensures our types really are safe types.
 
 ## Impacted Areas
 
