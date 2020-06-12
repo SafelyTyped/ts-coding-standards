@@ -22,6 +22,16 @@ Table of Contents:
 [ROBUSTNESS]: ../../impacted-areas/ROBUSTNESS.md
 [SECURITY]: ../../impacted-areas/SECURITY.md
 [TESTABILITY]: ../../impacted-areas/TESTABILITY.md
+[coding-conventions]: ../coding-conventions/README.md
+[documentation]: ../documentation/README.md
+[errors]: ../errors/README.md
+[functions]: ../functions/README.md
+[naming-conventions]: ../naming-conventions/README.md
+[package-management]: ../package-management/README.md
+[protocols-extensions]: ../protocols-extensions/README.md
+[type-guards]: ../type-guards/README.md
+[types]: ../types/README.md
+[unit-tests]: ../unit-tests/README.md
 [Base Class]: ../../glossary/base-class.md
 [Branded Type]: ../../glossary/branded-type.md
 [Caller]: ../../glossary/caller.md
