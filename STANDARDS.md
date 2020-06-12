@@ -34,18 +34,18 @@ Minor | These are consistency / stylistic / philosophical points.
 
 To make it easier to find things, we've broken up the coding standards into these groups:
 
-Category           | ID  | Description
--------------------|-----|------
-Coding Conventions | .9. | Ensures a consistent coding style over time.
-Documentation      | .1. | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
-Errors             | .2. | Ensures our code handles failure in a consistent, production-friendly manner.
-Functions          | .8. | Ensures consistent behaviour from our public module API (and our internal API too).
-Naming Conventions | .3. | Ensures a consistent and tidier public module API (and our internal API too).
-Package Management | .4. | Ensures a consistent approach to packages over time.
+Category               | ID   | Description
+-----------------------|------|------------
+Coding Conventions     | .9.  | Ensures a consistent coding style over time.
+Documentation          | .1.  | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
+Errors                 | .2.  | Ensures our code handles failure in a consistent, production-friendly manner.
+Functions              | .8.  | Ensures consistent behaviour from our public module API (and our internal API too).
+Naming Conventions     | .3.  | Ensures a consistent and tidier public module API (and our internal API too).
+Package Management     | .4.  | Ensures a consistent approach to packages over time.
 Protocols & Extensions | .10. | Ensures a consistent approach to extending types.
-Types              | .6. | Ensures our types really are safe types.
-Type Guards        | .7. | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
-Unit Tests         | .5. | Ensures we ship less bugs and regressions.
+Types                  | .6.  | Ensures our types really are safe types.
+Type Guards            | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
+Unit Tests             | .5.  | Ensures we ship less bugs and regressions.
 
 ## Impacted Areas
 
