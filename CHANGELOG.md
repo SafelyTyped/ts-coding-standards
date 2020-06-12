@@ -29,6 +29,7 @@ The following changes have been completed, and will be included in the next tagg
   - initial text
 - Coding Standards
   - Documentation
+    - Added 1.3.1
     - Added 3.1.1
     - Added 3.1.2
     - Added 3.1.3
