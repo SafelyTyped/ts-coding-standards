@@ -25,12 +25,15 @@ Priority | ID | Category | Criteria | Impacts
 [SECURITY]: ../../impacted-areas/SECURITY.md
 [TESTABILITY]: ../../impacted-areas/TESTABILITY.md
 [coding-conventions]: ../coding-conventions/README.md
+[data-guarantees]: ../data-guarantees/README.md
+[data-guards]: ../data-guards/README.md
 [documentation]: ../documentation/README.md
 [errors]: ../errors/README.md
 [functions]: ../functions/README.md
 [naming-conventions]: ../naming-conventions/README.md
 [package-management]: ../package-management/README.md
 [protocols-extensions]: ../protocols-extensions/README.md
+[data-guarantees]: ../type-guarantees/README.md
 [type-guards]: ../type-guards/README.md
 [types]: ../types/README.md
 [unit-tests]: ../unit-tests/README.md

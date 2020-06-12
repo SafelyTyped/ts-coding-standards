@@ -37,6 +37,8 @@ To make it easier to find things, we've broken up the coding standards into thes
 Category               | ID   | Description
 -----------------------|------|------------
 Coding Conventions     | .9.  | Ensures a consistent coding style over time.
+Data Guarantees        | .11. | Ensures [end-users][End-User] can enforce data contracts reliably.
+Data Guards            | .12. | Ensures [end-users][End-User] and maintainers can build data guarantees reliably.
 Documentation          | .1.  | Helps [end-users][End-User] and the maintainers understand the what, the how, and the why.
 Errors                 | .2.  | Ensures our code handles failure in a consistent, production-friendly manner.
 Functions              | .8.  | Ensures consistent behaviour from our public module API (and our internal API too).
@@ -44,6 +46,7 @@ Naming Conventions     | .3.  | Ensures a consistent and tidier public module AP
 Package Management     | .4.  | Ensures a consistent approach to packages over time.
 Protocols & Extensions | .10. | Ensures a consistent approach to extending types.
 Types                  | .6.  | Ensures our types really are safe types.
+Type Guarantees        | .13. | Ensures [end-users][End-User] and maintainers can enforce type contracts reliably.
 Type Guards            | .7.  | Ensures [end-users][End-User] have the [type guards][Type Guard] they need when they need them.
 Unit Tests             | .5.  | Ensures we ship less bugs and regressions.
 
@@ -133,12 +136,15 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [SECURITY]: impacted-areas/SECURITY.md
 [TESTABILITY]: impacted-areas/TESTABILITY.md
 [coding-conventions]: categories/coding-conventions/README.md
+[data-guarantees]: categories/data-guarantees/README.md
+[data-guards]: categories/data-guards/README.md
 [documentation]: categories/documentation/README.md
 [errors]: categories/errors/README.md
 [functions]: categories/functions/README.md
 [naming-conventions]: categories/naming-conventions/README.md
 [package-management]: categories/package-management/README.md
 [protocols-extensions]: categories/protocols-extensions/README.md
+[type-guarantees]: categories/type-guarantees/README.md
 [type-guards]: categories/type-guards/README.md
 [types]: categories/types/README.md
 [unit-tests]: categories/unit-tests/README.md
