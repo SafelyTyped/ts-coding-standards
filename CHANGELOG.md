@@ -49,6 +49,8 @@ The following changes have been completed, and will be included in the next tagg
     - Added 2.8.8
     - Added 3.8.1
     - Added 3.8.2
+  - Package Management
+    - Added 2.4.1
   - Naming Conventions
     - Added 1.3.1
     - Added 2.3.1

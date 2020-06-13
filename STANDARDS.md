@@ -105,6 +105,7 @@ Major | [2.3.1][2.3.1] | Naming Conventions | All functions and methods that ret
 Major | [2.3.2][2.3.2] | Naming Conventions | All smart constructors must be prefixed with `makeXXX()`. | [Adoption][ADOPTION]
 Major | [2.3.3][2.3.3] | Naming Conventions | All type guards must be prefixed with `isXXX()`. | [Adoption][ADOPTION]
 Major | [2.3.4][2.3.4] | Naming Conventions | All type guarantees must be prefixed with `mustBeXXX()`. | [Adoption][ADOPTION]
+Major | [2.4.1][2.4.1] | [Package Management][package-management] | Export the entire public API from the API's top-level index file. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Major | [2.5.1][2.5.1] | Unit Tests | Use mocks as a last resort. | [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Robustness][ROBUSTNESS]
 Major | [2.6.1][2.6.1] | Types | All base classes must have a `protected` constructor. | [Robustness][ROBUSTNESS], [Project Maintenance][PROJECT-MAINTENANCE]
 Major | [2.6.2][2.6.2] | Types | All generic types must provide an `AnyXXX` type. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS]
@@ -234,6 +235,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [2.3.2]: ./categories/naming-conventions/2.3.2.md
 [2.3.3]: ./categories/naming-conventions/2.3.3.md
 [2.3.4]: ./categories/naming-conventions/2.3.4.md
+[2.4.1]: ./categories/package-management/2.4.1.md
 [2.5.1]: ./categories/unit-tests/2.5.1.md
 [2.6.1]: ./categories/types/2.6.1.md
 [2.6.2]: ./categories/types/2.6.2.md
