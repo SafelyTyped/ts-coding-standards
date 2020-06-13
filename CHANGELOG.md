@@ -57,6 +57,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 3.4.4
     - Added 3.4.5
     - Added 3.4.6
+    - Added 3.4.7
   - Naming Conventions
     - Added 1.3.1
     - Added 2.3.1
