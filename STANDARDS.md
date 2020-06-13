@@ -147,6 +147,7 @@ Minor | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist`
 Minor | [3.4.1][3.4.1] | [Package Management][package-management] | Every module folder must have an index file. | [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.2][3.4.2] | [Package Management][package-management] | Index files must only export the public API. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.3][3.4.3] | [Package Management][package-management] | Put each safe type into its own folder. | [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.4.4][3.4.4] | [Package Management][package-management] | Put exported classes in their own files. | [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
 Minor | [3.6.2][3.6.2] | Types | Do not create static factory methods. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
@@ -276,6 +277,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.4.1]: ./categories/package-management/3.4.1.md
 [3.4.2]: ./categories/package-management/3.4.2.md
 [3.4.3]: ./categories/package-management/3.4.3.md
+[3.4.4]: ./categories/package-management/3.4.4.md
 [3.6.1]: ./categories/types/3.6.1.md
 [3.6.2]: ./categories/types/3.6.2.md
 [3.7.1]: ./categories/type-guards/3.7.1.md
