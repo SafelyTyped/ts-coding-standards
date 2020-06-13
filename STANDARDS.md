@@ -146,6 +146,7 @@ Minor | [3.3.11][3.3.11] | Naming Conventions | All user-supplied option classes
 Minor | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
 Minor | [3.4.1][3.4.1] | [Package Management][package-management] | Every module folder must have an index file. | [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.2][3.4.2] | [Package Management][package-management] | Index files must only export the public API. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.4.3][3.4.3] | [Package Management][package-management] | Put each safe type into its own folder. | [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
 Minor | [3.6.2][3.6.2] | Types | Do not create static factory methods. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
@@ -238,7 +239,6 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [2.3.3]: ./categories/naming-conventions/2.3.3.md
 [2.3.4]: ./categories/naming-conventions/2.3.4.md
 [2.4.1]: ./categories/package-management/2.4.1.md
-[3.4.1]: ./categories/package-management/3.4.1.md
 [2.5.1]: ./categories/unit-tests/2.5.1.md
 [2.6.1]: ./categories/types/2.6.1.md
 [2.6.2]: ./categories/types/2.6.2.md
@@ -273,6 +273,9 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.3.10]: ./categories/naming-conventions/3.3.10.md
 [3.3.11]: ./categories/naming-conventions/3.3.11.md
 [3.3.12]: ./categories/naming-conventions/3.3.12.md
+[3.4.1]: ./categories/package-management/3.4.1.md
+[3.4.2]: ./categories/package-management/3.4.2.md
+[3.4.3]: ./categories/package-management/3.4.3.md
 [3.6.1]: ./categories/types/3.6.1.md
 [3.6.2]: ./categories/types/3.6.2.md
 [3.7.1]: ./categories/type-guards/3.7.1.md
