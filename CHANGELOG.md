@@ -94,6 +94,7 @@ The following changes have been completed, and will be included in the next tagg
   - Unit Testing
     - Added 1.5.1
     - Added 2.5.1
+    - Added 3.5.1
 - Glossary
   - added Base Class
   - added Branded Type

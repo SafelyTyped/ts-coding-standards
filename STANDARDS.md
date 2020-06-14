@@ -152,6 +152,7 @@ Minor | [3.4.4][3.4.4] | [Package Management][package-management] | Put exported
 Minor | [3.4.5][3.4.5] | [Package Management][package-management] | Put exported functions in their own files. | [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.6][3.4.6] | [Package Management][package-management] | Put exported types in their own files. | [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.7][3.4.7] | [Package Management][package-management] | Put exported default values in their own file. | [Contributions][CONTRIBUTIONS], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.5.1][3.5.1] | [Unit Tests][unit-tests] | Put fixtures into a folder called `_fixtures`. | [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.6.1][3.6.1] | Types | Every interface that is meant to be implemented must define an `implementsXXX()` method. | [Robustness][ROBUSTNESS]
 Minor | [3.6.2][3.6.2] | Types | Do not create static factory methods. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
@@ -286,6 +287,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.4.5]: ./categories/package-management/3.4.5.md
 [3.4.6]: ./categories/package-management/3.4.6.md
 [3.4.7]: ./categories/package-management/3.4.7.md
+[3.5.1]: ./categories/unit-tests/3.5.1.md
 [3.6.1]: ./categories/types/3.6.1.md
 [3.6.2]: ./categories/types/3.6.2.md
 [3.7.1]: ./categories/type-guards/3.7.1.md
