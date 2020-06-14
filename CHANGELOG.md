@@ -50,6 +50,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 3.8.1
     - Added 3.8.2
   - Package Management
+    - Added 1.4.1
     - Added 2.4.1
     - Added 3.4.1
     - Added 3.4.2
