@@ -62,6 +62,7 @@ Minor | [3.3.10][3.3.10] | Naming Conventions | All Error class names must end w
 Minor | [3.3.11][3.3.11] | Naming Conventions | All user-supplied option classes/interface names must end with `Options`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
 Minor | [3.3.13][3.3.13] | [Naming Conventions][naming-conventions] | All default options must be called `XXX_DEFAULT_OPTIONS`. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.3.14][3.3.14] | [Naming Conventions][naming-conventions] | All default values must be called `DEFAULT_XXX`. | [Adoption][ADOPTION]
 
 [ADOPTION]: ../../impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ../../impacted-areas/CONTRIBUTIONS.md
@@ -155,3 +156,4 @@ Minor | [3.3.13][3.3.13] | [Naming Conventions][naming-conventions] | All defaul
 [3.3.11]: ./3.3.11.md
 [3.3.12]: ./3.3.12.md
 [3.3.13]: ./3.3.13.md
+[3.3.14]: ./3.3.14.md

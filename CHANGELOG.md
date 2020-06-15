@@ -80,6 +80,7 @@ The following changes have been completed, and will be included in the next tagg
     - Added 3.3.11
     - Added 3.3.12
     - Added 3.3.13
+    - Added 3.3.14
   - Protocols and Extensions
     - Added 2.10.1
   - Types

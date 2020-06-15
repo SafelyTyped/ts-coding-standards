@@ -147,6 +147,7 @@ Minor | [3.3.10][3.3.10] | Naming Conventions | All Error class names must end w
 Minor | [3.3.11][3.3.11] | Naming Conventions | All user-supplied option classes/interface names must end with `Options`. | [Adoption][ADOPTION], [Contributions][CONTRIBUTIONS]
 Minor | [3.3.12][3.3.12] | Naming Conventions | Do not name anything `blacklist` or `whitelist`. | [Adoption][ADOPTION]
 Minor | [3.3.13][3.3.13] | [Naming Conventions][naming-conventions] | All default options must be called `XXX_DEFAULT_OPTIONS`. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
+Minor | [3.3.14][3.3.14] | [Naming Conventions][naming-conventions] | All default values must be called `DEFAULT_XXX`. | [Adoption][ADOPTION]
 Minor | [3.4.1][3.4.1] | [Package Management][package-management] | Every module folder must have an index file. | [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.2][3.4.2] | [Package Management][package-management] | Index files must only export the public API. | [Adoption][ADOPTION], [Project Maintenance][PROJECT-MAINTENANCE]
 Minor | [3.4.3][3.4.3] | [Package Management][package-management] | Put each safe type into its own folder. | [Project Maintenance][PROJECT-MAINTENANCE]
@@ -283,6 +284,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.3.11]: ./categories/naming-conventions/3.3.11.md
 [3.3.12]: ./categories/naming-conventions/3.3.12.md
 [3.3.13]: ./categories/naming-conventions/3.3.13.md
+[3.3.14]: ./categories/naming-conventions/3.3.14.md
 [3.4.1]: ./categories/package-management/3.4.1.md
 [3.4.2]: ./categories/package-management/3.4.2.md
 [3.4.3]: ./categories/package-management/3.4.3.md
