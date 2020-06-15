@@ -121,6 +121,7 @@ Major | [2.8.6][2.8.6] | Functions | User-supplied options must be a single opti
 Major | [2.8.7][2.8.7] | Functions | Every property of the _user-supplied options_ parameter must be optional. | [Project Maintenance][PROJECT-MAINTENANCE]
 Major | [2.8.8][2.8.8] | Functions | Ever user-supplied option must have a default value. | [Adoption][ADOPTION], [Testability][TESTABILITY]
 Major | [2.8.9][2.8.9] | Functions | Functional options must be captured as a rest parameter. | [Adoption][ADOPTION]
+Major | [2.8.10][2.8.10] | [Functions][functions] | Define `DEFAULT_OPTIONS` for every function that cannot meet [2.8.7][2.8.7].
 Major | [2.10.1][2.10.1] | [Protocols and Extensions][protocols-extensions] | Every protocol interface must define an `implementsXXX()` method. | [Adoption][ADOPTION], [Robustness][ROBUSTNESS]
 
 ## Minor Criteria
