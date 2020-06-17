@@ -272,6 +272,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.1.4]: ./categories/documentation/3.1.4.md
 [3.1.5]: ./categories/documentation/3.1.5.md
 [3.1.6]: ./categories/documentation/3.1.6.md
+[3.2.1]: ./categories/errors/3.2.1.md
 [3.3.1]: ./categories/naming-conventions/3.3.1.md
 [3.3.2]: ./categories/naming-conventions/3.3.2.md
 [3.3.3]: ./categories/naming-conventions/3.3.3.md

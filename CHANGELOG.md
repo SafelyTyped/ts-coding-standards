@@ -38,6 +38,7 @@ The following changes have been completed, and will be included in the next tagg
   - Errors
     - Added 1.2.1
     - Added 1.2.2
+    - Added 3.2.1
   - Functions
     - Added 2.8.1
     - Added 2.8.2
