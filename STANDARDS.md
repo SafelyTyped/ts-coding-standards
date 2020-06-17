@@ -191,6 +191,7 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [Data Bag]: glossary/data-bag.md
 [Data Guarantee]: glossary/data-guarantee.md
 [Data Guard]: glossary/data-guard.md
+[Data Path]: glossary/data-path.md
 [Default Value]: glossary/default-value.md
 [Defensive Programming]: glossary/defensive-programming.md
 [Dependency]: glossary/dependency.md

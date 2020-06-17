@@ -107,6 +107,7 @@ The following changes have been completed, and will be included in the next tagg
   - added Data Bag
   - added Data Guarantee
   - added Data Guard
+  - added Data Path
   - added Default Value
   - added Defensive Programming
   - added Dependency Injection
