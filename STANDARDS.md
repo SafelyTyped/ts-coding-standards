@@ -161,6 +161,7 @@ Minor | [3.6.2][3.6.2] | Types | Do not create static factory methods. | [Adopti
 Minor | [3.7.1][3.7.1] | Type Guards | Every type guard must have a unit test that proves it is a _type predicate_. | [Robustness][ROBUSTNESS]
 Minor | [3.8.1][3.8.1] | Functions | Create a type for your function's user-supplied options. | [Adoption][ADOPTION]
 Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dependencies. | [Correctness][CORRECTNESS], [Project Maintenance][PROJECT-MAINTENANCE], [Testability][TESTABILITY]
+Minor | [3.8.3][3.8.3] | [Functions][functions] | Use `DEFAULT_DATA_PATH` for all optional data path parameters. | [Adoption][ADOPTION]
 
 [ADOPTION]: ./impacted-areas/ADOPTION.md
 [CONTRIBUTIONS]: ./impacted-areas/CONTRIBUTIONS.md
@@ -300,3 +301,4 @@ Minor | [3.8.2][3.8.2] | Functions | Limit user-supplied options to optional dep
 [3.7.1]: ./categories/type-guards/3.7.1.md
 [3.8.1]: ./categories/functions/3.8.1.md
 [3.8.2]: ./categories/functions/3.8.2.md
+[3.8.3]: ./categories/functions/3.8.3.md
